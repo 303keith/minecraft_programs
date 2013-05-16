@@ -1,0 +1,21 @@
+Event: modem_message
+Side: left
+Sent Channel: 4
+Reply Channel: 0
+Distance: 20.639767
+MFE: 
+  EnergyEmitted = 105125
+  Output = 128
+  EnergySunken = 107640
+  Capacity = 600000
+  StoredPercentage = 100
+  Name = MFE
+  Stored = 600005
+Electric Furnace: 
+  EnergySunken = 0
+  Name = Electric Furnace
+  EnergyEmitted = 0
+Macerator: 
+  EnergySunken = 0
+  Name = Macerator
+  EnergyEmitted = 0

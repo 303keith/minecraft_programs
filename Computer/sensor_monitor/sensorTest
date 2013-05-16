@@ -1,0 +1,22 @@
+-- load the AP
+os.loadAPI("ocs/apis/sensor")
+
+-- wrap the sensor
+snsr = sensor.wrap("top")
+
+print(snsr)
+
+local targets = snsr.getTargets()
+
+if targets then
+  -- loop through targets on the sensor
+  for name, basicDetails in pairs(targets) do
+    print("Found target " .. name)
+    local moreDetails = snsr.getTargetDetails(name)
+    
+    for key, val in pairs(moreDetails) do
+       print(key .. " = " .. tostring(val))
+    end
+    print("------")
+  end
+end

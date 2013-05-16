@@ -1,0 +1,110 @@
+-- read all the sensors and show cool stuff on 
+-- the monitor
+
+--os.loadAPI("serialize")
+
+-- check for debug mode
+local isDebug = false
+local arg = { ... }
+if arg[1] == 'debug' then
+  isDebug = true
+  debugFile = io.open("sensorDebug.txt", "w")
+end
+
+local MODEM_CHANNEL_CONTROL = 3
+local MODEM_CHANNEL_DATA = 4
+local MONITOR_FREQUENCY = 2
+
+-- check sides for monitor, modem and sensor and initialize them
+function initPeripherals()
+  for k, v in pairs(rs.getSides()) do
+    local pType = peripheral.getType(v)
+    if pType == "modem" then
+      modem = peripheral.wrap(v)
+      modem.open(MODEM_CHANNEL_DATA)
+      print("Loaded Modem from " .. v)
+    elseif pType == "sensor" then
+      os.loadAPI("ocs/apis/sensor")
+      snsr = sensor.wrap(v)
+      print("Loaded Sensor from " .. v)
+    elseif pType == "monitor" then
+      mon = peripheral.wrap(MONITOR_SIDE)
+    end
+  end
+end
+
+local monWidth, monHeight = term.getSize()
+function updateMonitorTime()
+  out = "Day " .. os.day() .. ", " .. textutils.formatTime(os.time(), false)
+  mon.setCursorPos(monWidth - #out, 1)
+  mon.write(out)
+end
+
+function initMonitor()
+  mon.clear()
+  mon.setCursorPos(1, 1)
+  mon.write("starting monitor...")
+  updateMonitorTime()
+	term.redirect(mon)
+end
+
+
+
+function requestSensorData()
+  modem.transmit(MODEM_CHANNEL_CONTROL
+    , MODEM_CHANNEL_DATA
+    , "getSensorData")
+end
+
+initPeripherals()
+initMonitor()
+requestSensorData()
+
+
+
+-- wrap the monitor
+
+
+
+
+-- listen for control signals 
+
+
+
+print("getting sensor data on channel " .. MODEM_CHANNEL_CONTROL)
+
+-- listen for data
+for event, p1, p2, p3, p4, p5 in os.pullEvent do
+  if event == "modem_message" then
+    if p2 == MODEM_CHANNEL_DATA and p4 then 
+      local out = "Event: " .. event .. "\n"
+      out = out .. "Side: " .. p1 .. "\n"
+      out = out .. "Sent Channel: " .. p2 .. "\n"
+      out = out .. "Reply Channel: " .. p3 .. "\n"
+      out = out .. "Distance: " .. p5 .. "\n"
+			local dataTable = loadstring(p4)()
+      for nm, details in pairs(dataTable) do
+          local targetOut = nm .. ": \n"
+          for k, v in pairs(details) do
+            if k ~= "RawName" and k ~= "Position" then
+              targetOut = targetOut .. "  " .. k .. " = " .. tostring(v) .. "\n"
+            end
+          end
+          out = out .. targetOut
+      end
+      mon.setCursorPos(1, 2)
+      mon.write(out)
+      print(out)
+      local log = io.open("data.in", "w")
+      log:write(out)
+      log:close()
+    elseif p2 == MODEM_CHANNEL_CONTROL then
+      print("Control Response not Implemented")
+    end
+  elseif event == "char" and p1 == "x" then
+    break 
+  end
+end
+
+print()
+print("wasn't that fun.")

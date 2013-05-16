@@ -1,0 +1,130 @@
+-- listen for requests from the monitor
+-- and reply with sensor data
+
+-- check for debug mode
+local isDebug = false
+local arg = { ... }
+if arg[1] == 'debug' then
+  isDebug = true
+  debugFile = io.open("sensorDebug.txt", "w")
+end
+
+local snsr, modem, targets
+local MODEM_CHANNEL = 3
+
+os.loadAPI("serialize")
+
+-- check sides for modem and sensor and initialize them
+function initPeripherals()
+  for k, v in pairs(rs.getSides()) do
+    local pType = peripheral.getType(v)
+    if pType == "modem" then
+      modem = peripheral.wrap(v)
+      modem.open(MODEM_CHANNEL)
+      print("Loaded Modem from " .. v)
+    elseif pType == "sensor" then
+      os.loadAPI("ocs/apis/sensor")
+      snsr = sensor.wrap(v)
+      print("Loaded Sensor from " .. v)
+    end
+  end
+end
+
+-- get the cofig for the targets to watch
+function initTargets()
+  -- check config file exists
+  local filename = "sensorConfig"
+  local configExists = false
+  local file = io.open(filename,"r")
+  if file ~= nil then
+    configExists = true
+    file:close()
+    targets = dofile(filename)
+    dumpTable(targets)
+  end
+end
+
+
+function getSensorData()
+  local snsrTargs = snsr.getTargets()
+  local data = {}
+  if targets then
+    -- loop through targets on the sensor
+    for position, details in pairs(snsrTargs) do
+      -- only use targets with names
+      if details["Name"] ~= "" then
+        -- if we've specified a list of targets
+        if #targets then
+          -- only add targets in list
+          for i, v in ipairs(targets) do
+            if v == details["Name"] then
+              -- add sensor data
+              data[details["Name"]] = snsr.getTargetDetails(position)
+              break
+            end
+          end
+        else
+          -- add any sensor data
+          data[details["Name"]] = snsr.getTargetDetails(position)
+        end
+      end
+    end
+  end
+  return data
+end
+
+function dumpTable(table, depth)
+  if type(table) ~= "table" then return end
+  if not depth then depth = 0 end
+  for k, v in pairs(table) do
+    if type(v) ~= 'table' then
+      if v ~= "" then
+        v = tostring(v)
+        for i = 0, depth, 1 do
+          io.write(" ")
+          if isDebug then
+            debugFile:write(" ")
+          end
+        end
+        print(k .. ": " .. v)
+        if isDebug then
+          debugFile:write(k .. ": " .. v .. "\n")
+        end
+      end
+    else
+      print(k .. ": ")
+      if isDebug then
+        debugFile:write(k .. ": \n")
+      end
+      dumpTable(v, depth + 1)
+    end
+  end
+end
+
+initPeripherals()
+initTargets()
+
+if not isDebug then
+  print("listening for monitor on channel " .. MODEM_CHANNEL .. "...")
+  for event, p1, p2, p3, p4, p5 in os.pullEvent do
+    if event == "modem_message"
+      and p4 == "getSensorData"
+    then
+      local data = getSensorData()
+      print(type(data))
+      print(type(serialize))
+      local serialData = serialize.serialize(data)
+      print("Sending Data.")
+      print(serialData)
+      modem.transmit(p3, 0, serialData)
+    elseif event == "char" and p1 == "x" then
+      break
+    end 
+  end
+else
+  print("Debugging sensor data...")
+  
+  --local data = getSensorData()
+  --debugFile:close()
+  --dumpTable(data)
+end

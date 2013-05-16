@@ -1,0 +1,79 @@
+ EnergyEmitted: 85142
+ EnergySunken: 85125
+Position: 
+  Y: -1
+  X: -1
+  Z: -5
+ RawName: ic2.blocktransformerlv
+ Name: LV-Transformer
+----------
+ StoredPercentage: 100
+ EnergyEmitted: 85125
+ Capacity: 600000
+ Stored: 600013
+ Name: MFE
+ EnergySunken: 87168
+ Output: 128
+ RawName: ic2.blockmfe
+Position: 
+  Y: -1
+  X: -5
+  Z: 2
+----------
+ StoredPercentage: 0
+ EnergyEmitted: 16440
+ Capacity: 1000000
+ Stored: 126
+ Name: You ran into a serious Bug, if you have legitly aquired this Block, please report it immidietly
+ EnergySunken: 0
+ Output: 24
+ RawName: tile.blockmetaid_machine.gt_bug
+Position: 
+  Y: -1
+  X: -5
+  Z: 3
+----------
+ EnergyEmitted: 0
+ EnergySunken: 0
+Position: 
+  Y: 0
+  X: -2
+  Z: -4
+ RawName: ic2.blockelecfurnace
+ Name: Electric Furnace
+----------
+ StoredPercentage: 0
+ EnergyEmitted: 16440
+ Capacity: 1000000
+ Stored: 120
+ Name: You ran into a serious Bug, if you have legitly aquired this Block, please report it immidietly
+ EnergySunken: 0
+ Output: 24
+ RawName: tile.blockmetaid_machine.gt_bug
+Position: 
+  Y: -1
+  X: -3
+  Z: 3
+----------
+ EnergyEmitted: 0
+ EnergySunken: 0
+Position: 
+  Y: 0
+  X: 4
+  Z: -4
+ RawName: ic2.blockmacerator
+ Name: Macerator
+----------
+ StoredPercentage: 0
+ EnergyEmitted: 16728
+ Capacity: 1000000
+ Stored: 120
+ Name: You ran into a serious Bug, if you have legitly aquired this Block, please report it immidietly
+ EnergySunken: 0
+ Output: 24
+ RawName: tile.blockmetaid_machine.gt_bug
+Position: 
+  Y: -1
+  X: -4
+  Z: 3
+----------

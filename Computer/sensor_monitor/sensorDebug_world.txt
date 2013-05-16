@@ -1,0 +1,10 @@
+ Dimension: 0
+ Thundering: false
+ Biome: Temperate Rainforest
+ Daytime: true
+ Name: World
+ LightLevel: 11
+ CelestialAngle: 0.08945322
+ RawName: world
+ Raining: false
+----------
