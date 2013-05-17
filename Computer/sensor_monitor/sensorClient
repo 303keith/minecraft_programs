@@ -12,7 +12,7 @@ end
 local snsr, modem, targets
 local MODEM_CHANNEL = 3
 
-os.loadAPI("serialize")
+--os.loadAPI("serialize")
 
 -- check sides for modem and sensor and initialize them
 function initPeripherals()
@@ -46,8 +46,18 @@ end
 
 
 function getSensorData()
+  local ret = {}
+  
+  -- ensure a sensor is present
+  if snsr then
+    ret['sensor'] = snsr.getSensorName()
+  else
+    ret['error'] = 'no sensor'
+    return ret
+  end
+
+  -- look for sensor targets
   local snsrTargs = snsr.getTargets()
-  local data = {}
   if targets then
     -- loop through targets on the sensor
     for position, details in pairs(snsrTargs) do
@@ -59,24 +69,36 @@ function getSensorData()
           for i, v in ipairs(targets) do
             if v == details["Name"] then
               -- add sensor data
-              data[details["Name"]] = snsr.getTargetDetails(position)
+              ret['data'][details["Name"]] = snsr.getTargetDetails(position)
               break
             end
           end
         else
           -- add any sensor data
-          data[details["Name"]] = snsr.getTargetDetails(position)
+          ret['data'][details["Name"]] = snsr.getTargetDetails(position)
         end
       end
     end
+  else
+    ret['error'] = 'no targets'
+    return ret
   end
-  return data
+  if not ret['data'] then
+    ret['error'] = 'no data'
+  end
+  return ret
 end
 
+-- recursively print key/value from a table
+-- write to the debug file if in debug mode
 function dumpTable(table, depth)
-  if type(table) ~= "table" then return end
+  isDebug = true
+  if type(table) ~= "table" then 
+    print(table)
+  end
   if not depth then depth = 0 end
   for k, v in pairs(table) do
+    print(k)
     if type(v) ~= 'table' then
       if v ~= "" then
         v = tostring(v)
@@ -101,30 +123,47 @@ function dumpTable(table, depth)
   end
 end
 
+-- send data through the modem
+-- return true if data nd no errors
+function sendData(data)
+  if data['data'] then
+    local serialData = serialize.serialize(data)
+    modem.transmit(p3, 0, serialData)
+    if isDebug then
+      dumpTable(data)
+      print(data)
+    end
+    return true
+  elseif data['error'] then
+    print(data['error'])
+    return false
+  else
+    print('failed no error')
+    return false
+  end
+end
+-- end functions
+
 initPeripherals()
 initTargets()
 
+local data = false
 if not isDebug then
   print("listening for monitor on channel " .. MODEM_CHANNEL .. "...")
   for event, p1, p2, p3, p4, p5 in os.pullEvent do
     if event == "modem_message"
       and p4 == "getSensorData"
     then
-      local data = getSensorData()
-      print(type(data))
-      print(type(serialize))
-      local serialData = serialize.serialize(data)
-      print("Sending Data.")
-      print(serialData)
-      modem.transmit(p3, 0, serialData)
+      data = getSensorData()
     elseif event == "char" and p1 == "x" then
       break
     end 
   end
 else
+  -- debugging - get data and quit
   print("Debugging sensor data...")
-  
-  --local data = getSensorData()
-  --debugFile:close()
-  --dumpTable(data)
+  sendData(getSensorData())
+  debugFile:close()
 end
+
+

@@ -15,20 +15,24 @@ local MODEM_CHANNEL_CONTROL = 3
 local MODEM_CHANNEL_DATA = 4
 local MONITOR_FREQUENCY = 2
 
--- check sides for monitor, modem and sensor and initialize them
+-- check sides for monitor, modem and sensor and 
+-- initialize them
 function initPeripherals()
+  -- loop through sides and initialize peripherals
   for k, v in pairs(rs.getSides()) do
     local pType = peripheral.getType(v)
     if pType == "modem" then
+      print('found modem')
       modem = peripheral.wrap(v)
       modem.open(MODEM_CHANNEL_DATA)
-      print("Loaded Modem from " .. v)
+      --print("Loaded Modem from " .. v)
     elseif pType == "sensor" then
       os.loadAPI("ocs/apis/sensor")
       snsr = sensor.wrap(v)
       print("Loaded Sensor from " .. v)
     elseif pType == "monitor" then
-      mon = peripheral.wrap(MONITOR_SIDE)
+      print('found monitor')
+      mon = peripheral.wrap(v)
     end
   end
 end
@@ -48,8 +52,6 @@ function initMonitor()
 	term.redirect(mon)
 end
 
-
-
 function requestSensorData()
   modem.transmit(MODEM_CHANNEL_CONTROL
     , MODEM_CHANNEL_DATA
@@ -59,17 +61,6 @@ end
 initPeripherals()
 initMonitor()
 requestSensorData()
-
-
-
--- wrap the monitor
-
-
-
-
--- listen for control signals 
-
-
 
 print("getting sensor data on channel " .. MODEM_CHANNEL_CONTROL)
 
