@@ -5,6 +5,7 @@
 
 -- check for debug mode
 local isDebug = false
+local isRunning = true
 local arg = { ... }
 if arg[1] == 'debug' then
   isDebug = true
@@ -13,7 +14,7 @@ end
 
 local MODEM_CHANNEL_CONTROL = 3
 local MODEM_CHANNEL_DATA = 4
-local MONITOR_FREQUENCY = 2
+local MONITOR_FREQUENCY = 1
 
 -- check sides for monitor, modem and sensor and 
 -- initialize them
@@ -39,32 +40,80 @@ end
 
 local monWidth, monHeight = term.getSize()
 function updateMonitorTime()
-  out = "Day " .. os.day() .. ", " .. textutils.formatTime(os.time(), false)
+  local out = "Day " .. os.day() .. ", " .. textutils.formatTime(os.time(), false)
   mon.setCursorPos(monWidth - #out, 1)
   mon.write(out)
 end
 
-function initMonitor()
+function refreshMonitor()
   mon.clear()
-  mon.setCursorPos(1, 1)
-  mon.write("starting monitor...")
   updateMonitorTime()
-	term.redirect(mon)
 end
 
 function requestSensorData()
+  --print('Requesting sensor data on channel ' .. MODEM_CHANNEL_CONTROL)
   modem.transmit(MODEM_CHANNEL_CONTROL
     , MODEM_CHANNEL_DATA
     , "getSensorData")
 end
 
-initPeripherals()
-initMonitor()
-requestSensorData()
+function parseSesnsorData(data)
+  
+  local out
+  if #data['sensors'] then
+    for i, snsr in ipairs(data['sensors']) do
+      --print(i .. ' = ' .. snsr['name'])
+      if snsr['name'] == 'openccsensors.item.appliedenergisticssensor' then
+        local usedPct = math.floor((snsr['data']['ME Wireless Access Point']['UsedBytes'] / (snsr['data']['ME Wireless Access Point']['UsedBytes'] + snsr['data']['ME Wireless Access Point']['FreeBytes'])) * 100)
+        out = usedPct .. '% of ME storage is in use for ' .. snsr['data']['ME Wireless Access Point']['UsedCount'] .. ' items.\n'
+      elseif snsr['name'] == 'openccsensors.item.industrialcraftsensor' then
+      end
+    end
+  end
+  refreshMonitor()
+  mon.setCursorPos(1, 2)
+  mon.write(out)
+  --print(out)
+end
 
-print("getting sensor data on channel " .. MODEM_CHANNEL_CONTROL)
+-- listen for incoming network data
+function handleNetworkEvent()
+  --print('Listening for sensor data on channel ' .. MODEM_CHANNEL_DATA)
+  local event, side, receivedChannel, replyChannel, reply, distance = os.pullEvent("modem_message")
+  --print("Side: " .. side)
+  --print("Sent Channel: " .. receivedChannel)
+  --print("Reply Channel: " .. replyChannel)
+  --print("Distance: " .. distance)
+  if receivedChannel == MODEM_CHANNEL_DATA then
+    local sensorData = loadstring(reply)()
+    --print('received data')
+    parseSesnsorData(sensorData)
+  end
+end
+
+-- listen for key presses
+function handleKeyPress()
+  --print('Press X to quit.')
+  local event, key = os.pullEvent("char")
+  if key == "x" or key == "X" then
+    isRunning = false
+    return
+  end
+end
+
+initPeripherals()
+refreshMonitor()
+
+-- main loop
+while isRunning do
+  sleep(MONITOR_FREQUENCY)
+  --refreshMonitor()
+  requestSensorData()
+  parallel.waitForAny(handleNetworkEvent, handleKeyPress)
+end
 
 -- listen for data
+--[[
 for event, p1, p2, p3, p4, p5 in os.pullEvent do
   if event == "modem_message" then
     if p2 == MODEM_CHANNEL_DATA and p4 then 
@@ -73,22 +122,8 @@ for event, p1, p2, p3, p4, p5 in os.pullEvent do
       out = out .. "Sent Channel: " .. p2 .. "\n"
       out = out .. "Reply Channel: " .. p3 .. "\n"
       out = out .. "Distance: " .. p5 .. "\n"
-			local dataTable = loadstring(p4)()
-      for nm, details in pairs(dataTable) do
-          local targetOut = nm .. ": \n"
-          for k, v in pairs(details) do
-            if k ~= "RawName" and k ~= "Position" then
-              targetOut = targetOut .. "  " .. k .. " = " .. tostring(v) .. "\n"
-            end
-          end
-          out = out .. targetOut
-      end
-      mon.setCursorPos(1, 2)
-      mon.write(out)
-      print(out)
-      local log = io.open("data.in", "w")
-      log:write(out)
-      log:close()
+			local sensorData = loadstring(p4)()
+      parseSesnsorData(sensorData)
     elseif p2 == MODEM_CHANNEL_CONTROL then
       print("Control Response not Implemented")
     end
@@ -96,6 +131,7 @@ for event, p1, p2, p3, p4, p5 in os.pullEvent do
     break 
   end
 end
+]]
 
 print()
 print("wasn't that fun.")

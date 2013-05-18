@@ -1,1697 +1,2619 @@
- UsedTypes: 335
- FreeTypes: 1146
- FreeCount: 176609
- Name: ME Wireless Access Point
-   Size: 50
-   MaxStack: 64
-   DamageValue: 2
-   RawName: item.skull.zombie
-   Name: Zombie Head
-   Size: 36
-   MaxStack: 16
-   DamageValue: 0
-   RawName: item.snowball
-   Name: Snowball
-   Size: 5
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.pumpkin
-   Name: Pumpkin
-   Size: 7
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.glassbottle
-   Name: Glass Bottle
-   Size: 16
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.beefcooked
-   Name: Steak
-   Size: 167
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemingotadviron
-   Name: Refined Iron
-   Size: 34
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.sapling
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.myst.lectern
-   Name: Lectern
-   Size: 120
-   MaxStack: 64
-   DamageValue: 0
-   RawName: rc.part.rail.standard
-   Name: Standard Rail
-   Size: 2007
-   MaxStack: 64
-   DamageValue: 3
-   RawName: tile.basaltcobble
-   Name: Basalt Cobblestone
-   Size: 2
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.doorwood
-   Name: Wooden Door
-   Size: 818
-   MaxStack: 16
-   DamageValue: 0
-   RawName: item.egg
-   Name: Egg
-   Size: 12
-   MaxStack: 64
-   DamageValue: 5
-   RawName: advsolar.itemirradiantglasspane
-   Name: Irradiant Glass Pane
-   Size: 6
-   MaxStack: 64
-   DamageValue: 244
-   RawName: item.gt_dusts.244
-   Name: Tin Dust
-   Size: 75
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.book
-   Name: Book
-   Size: 3956
-   MaxStack: 64
-   DamageValue: 5
-   RawName: item.ingotcopper
-   Name: Copper Ingot
-   Size: 44
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.potato
-   Name: Potato
-   Size: 8
-   MaxStack: 64
-   DamageValue: 17
-   RawName: item.gt_dusts.17
-   Name: Bauxite Dust
-   Size: 6
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.stairswood
-   Name: Oak Wood Stairs
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: ic2.blockmachine
-   Name: Machine Block
-   Size: 10
-   MaxStack: 64
-   DamageValue: 12
-   RawName: tile.cloth.brown
-   Name: Brown Wool
-   Size: 2
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.basalt
-   Name: Basalt
-   Size: 3
-   MaxStack: 64
-   DamageValue: 7
-   RawName: tile.cloth.gray
-   Name: Gray Wool
-   Size: 8
-   MaxStack: 64
-   DamageValue: 42
-   RawName: item.cleaning tube
-   Name: Cleaning Tube
-   Size: 40
-   MaxStack: 64
-   DamageValue: 34
-   RawName: item.iron pane
-   Name: Iron Pane
-   Size: 65
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.woodengearitem
-   Name: item.woodenGearItem
-   Size: 156
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.bluexychoridite
-   Name: Blue Xychoridite
-   Size: 52
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.rawplasticitem
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.blockcrop
-   Name: Crop
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.diode
-   Name: Redstone Repeater
-   Size: 18
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemingotalloy
-   Name: Mixed Metal Ingot
-   Size: 4
-   MaxStack: 64
-   DamageValue: 9
-   RawName: item.itemresource.9
-   Name: Knowledge Fragment
-   Size: 37
-   MaxStack: 64
-   DamageValue: 0
-   RawName: conduit.energy
-   Name: Redstone Energy Conduit
-   Size: 18233
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.ingotiron
-   Name: Iron Ingot
-   Size: 11458
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.lightxychorium
-   Name: Light Xychorium
-   Size: 13946
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemforcicium
-   Name: Forcicium
-   Size: 5947
-   MaxStack: 64
-   DamageValue: 23
-   RawName: item.gt_materials.23
-   Name: Lead Ingot
-   Size: 17336
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.coal
-   Name: Coal
-   Size: 5917
-   MaxStack: 64
-   DamageValue: 3
-   RawName: item.ingotsilver
-   Name: Silver Ingot
-   Size: 1694
-   MaxStack: 64
-   DamageValue: 1
-   RawName: item.greensapphire
-   Name: Green Sapphire
-   Size: 2597
-   MaxStack: 64
-   DamageValue: 2
-   RawName: item.sapphire
-   Name: Sapphire
-   Size: 13455
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.world.blocks.worldgen.quartzcrystal
-   Name: Quartz Crystal
-   Size: 36553
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.wheat
-   Name: Wheat
-   Size: 29566
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.seeds
-   Name: Seeds
-   Size: 11159
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.aluminum
-   Name: Aluminum
-   Size: 10
-   MaxStack: 64
-   DamageValue: 131
-   RawName: item.material.slag
-   Name: Slag
-   Size: 5
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.gearbronze
-   Name: Bronze Gear
-   Size: 7
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.stonegearitem
-   Name: item.stoneGearItem
-   Size: 7482
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.clay
-   Name: Clay
-   Size: 2
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.enginestone
-   Name: tile.engineStone
-   Size: 5
-   MaxStack: 64
-   DamageValue: 2
-   RawName: tile.engine.2
-   Name: Electrical Engine
-   Size: 8
-   MaxStack: 64
-   DamageValue: 0
-   RawName: rc.part.plate.iron
-   Name: Iron Plate
-   Size: 21
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.chest
-   Name: Chest
-   Size: 176
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.redxychoridite
-   Name: Red Xychoridite
-   Size: 78
-   MaxStack: 64
-   DamageValue: 0
-   RawName: glass.hardened
-   Name: Hardened Glass
-   Size: 1834
-   MaxStack: 64
-   DamageValue: 44
-   RawName: item.gt_dusts.44
-   Name: Galena Dust
-   Size: 812
-   MaxStack: 64
-   DamageValue: 22
-   RawName: item.gt_dusts.22
-   Name: Tungsten Dust
-   Size: 1432
-   MaxStack: 64
-   DamageValue: 28
-   RawName: item.gt_materials.28
-   Name: Nickel Ingot
-   Size: 1323
-   MaxStack: 64
-   DamageValue: 6
-   RawName: item.itemresource.6
-   Name: Amber
-   Size: 2266
-   MaxStack: 64
-   DamageValue: 3
-   RawName: item.itemresource.3
-   Name: Quicksilver
-   Size: 511
-   MaxStack: 64
-   DamageValue: 1
-   RawName: item.itemshard.1
-   Name: Fire Shard
-   Size: 491
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemshard.0
-   Name: Air Shard
-   Size: 994
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemoreuran
-   Name: Uranium Ore
-   Size: 559
-   MaxStack: 64
-   DamageValue: 4
-   RawName: item.itemshard.4
-   Name: Vis Shard
-   Size: 461
-   MaxStack: 64
-   DamageValue: 3
-   RawName: item.itemshard.3
-   Name: Earth Shard
-   Size: 16
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemoreiridium
-   Name: Iridium Ore
-   Size: 46
-   MaxStack: 64
-   DamageValue: 0
-   RawName: ic2.itemcable
-   Name: Copper Cable
-   Size: 12799
-   MaxStack: 64
-   DamageValue: 130
-   RawName: item.material.sawdustcompressed
-   Name: Compressed Sawdust
-   Size: 365
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.blazepowder
-   Name: Blaze Powder
-   Size: 3
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itempartcarbonplate
-   Name: Carbon Plate
-   Size: 10
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itempartalloy
-   Name: Advanced Alloy
-   Size: 8
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.blockrubwood
-   Name: Rubber Wood
-   Size: 1
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.blockrubsapling
-   Name: Rubber Tree Sapling
-   Size: 1148
-   MaxStack: 64
-   DamageValue: 1
-   RawName: item.charcoal
-   Name: Charcoal
-   Size: 420
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.wood.oak
-   Name: Oak Wood Planks
-   Size: 14
-   MaxStack: 64
-   DamageValue: 4
-   RawName: rc.machine.beta.boiler.tank.pressure.high
-   Name: High Pressure Boiler
-   Size: 3
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.irongoldupgrade
-   Name: Iron to Gold Chest Upgrade
-   Size: 3
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.woodironupgrade
-   Name: Normal chest to Iron Chest Upgrade
-   Size: 31379
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.marble
-   Name: Marble
-   Size: 11997
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.redxychorium
-   Name: Red Xychorium
-   Size: 2089
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.extrabiomes.log.quarter.1
-   Name: Fir Log
-   Size: 26325
-   MaxStack: 64
-   DamageValue: 6
-   RawName: item.nikolite
-   Name: Nikolite
-   Size: 76
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeitemsiron
-   Name: item.PipeItemsIron
-   Size: 21
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.extrabiomes.redrock.1
-   Name: Red Cobblestone
-   Size: 471
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.diamond
-   Name: Diamond
-   Size: 129
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.henequenseeds
-   Name: Henequen Seeds
-   Size: 2
-   MaxStack: 64
-   DamageValue: 240
-   RawName: item.gt_dusts.240
-   Name: Coal Dust
-   Size: 20
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeitemsgold
-   Name: item.PipeItemsGold
-   Size: 6
-   MaxStack: 64
-   DamageValue: 64
-   RawName: item.facade
-   Name: item.Facade: 
-   Size: 9
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.tankblock
-   Name: tile.tankBlock
-   Size: 4
-   MaxStack: 64
-   DamageValue: 161
-   RawName: item.material.powercoilgold
-   Name: Redstone Reception Coil
-   Size: 149
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.miniumshard
-   Name: Shard of Minium
-   Size: 106
-   MaxStack: 64
-   DamageValue: 243
-   RawName: item.gt_dusts.243
-   Name: Copper Dust
-   Size: 16
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.skull.skeleton
-   Name: Skeleton Skull
-   Size: 143
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.sulphur
-   Name: Gunpowder
-   Size: 134
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.stonemoss
-   Name: Moss Stone
-   Size: 10
-   MaxStack: 64
-   DamageValue: 15
-   RawName: tile.cloth.black
-   Name: Black Wool
-   Size: 30
-   MaxStack: 64
-   DamageValue: 24
-   RawName: item.gt_dusts.24
-   Name: Zinc Dust
-   Size: 39
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.netherbrick
-   Name: Nether Brick
-   Size: 3
-   MaxStack: 64
-   DamageValue: 0
-   RawName: rc.machine.beta.tank.iron.wall
-   Name: Iron Tank Wall
-   Size: 6
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeliquidscobblestone
-   Name: item.PipeLiquidsCobblestone
-   Size: 21
-   MaxStack: 64
-   DamageValue: 15
-   RawName: item.gt_materials.15
-   Name: Wood Plate
-   Size: 814
-   MaxStack: 64
-   DamageValue: 7
-   RawName: appeng.quartz dust
-   Name: Quartz Dust
-   Size: 11157
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.bluexychorium
-   Name: Blue Xychorium
-   Size: 162
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemrubber
-   Name: Rubber
-   Size: 154
-   MaxStack: 64
-   DamageValue: 14
-   RawName: item.gt_dusts.14
-   Name: Sphalerite Dust
-   Size: 3
-   MaxStack: 64
-   DamageValue: 55
-   RawName: item.gt_materials.55
-   Name: Yellow Garnet
-   Size: 92
-   MaxStack: 64
-   DamageValue: 3
-   RawName: item.gt_dusts.3
-   Name: Pyrite Dust
-   Size: 2
-   MaxStack: 64
-   DamageValue: 12
-   RawName: rc.machine.alpha.blast.furnace
-   Name: Blast Furnace Brick
-   Size: 6134
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.flint
-   Name: Flint
-   Size: 1612
-   MaxStack: 64
-   DamageValue: 2
-   RawName: item.itemshard.2
-   Name: Water Shard
-   Size: 1444
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.ruby
-   Name: Ruby
-   Size: 9397
-   MaxStack: 64
-   DamageValue: 4
-   RawName: item.ingottin
-   Name: Tin Ingot
-   Size: 4
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.hellsand
-   Name: Soul Sand
-   Size: 419
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.rc.part.ingot.steel
-   Name: Steel Ingot
-   Size: 4
-   MaxStack: 64
-   DamageValue: 2
-   RawName: item.itemresource.2
-   Name: Thaumium Ingot
-   Size: 110
-   MaxStack: 64
-   DamageValue: 14
-   RawName: appeng.quartz fiber
-   Name: Quartz Fiber
-   Size: 11938
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.darkxychorium
-   Name: Dark Xychorium
-   Size: 157
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeitemscobblestone
-   Name: item.PipeItemsCobblestone
-   Size: 1108
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.rc.fuel.coke
-   Name: Coal Coke
-   Size: 126
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeitemsstone
-   Name: item.PipeItemsStone
-   Size: 227
-   MaxStack: 64
-   DamageValue: 13
-   RawName: appeng.silicon
-   Name: Silicon
-   Size: 588
-   MaxStack: 64
-   DamageValue: 6
-   RawName: appeng.quartz crystal
-   Name: Quartz Crystal
-   Size: 10
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.cloth.white
-   Name: Wool
-   Size: 318
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.slimeball
-   Name: Slimeball
-   Size: 19
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.enginewood
-   Name: tile.engineWood
-   Size: 32
-   MaxStack: 64
-   DamageValue: 21
-   RawName: item.gt_materials.21
-   Name: Electrum Ingot
-   Size: 11475
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.greenxychorium
-   Name: Green Xychorium
-   Size: 1
-   MaxStack: 16
-   DamageValue: 0
-   RawName: item.extra-dimensional storage
-   Size: 3
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.extrabiomes.stairs.redcobble
-   Name: Red Cobblestone Stairs
-   Size: 50
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeitemsdiamond
-   Name: item.PipeItemsDiamond
-   Size: 6
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.leather
-   Name: Leather
-   Size: 190
-   MaxStack: 64
-   DamageValue: 5
-   RawName: item.factoryblock5
-   Size: 2
-   MaxStack: 64
-   DamageValue: 1
-   RawName: soaryn.aesthgreenmultibrick
-   Name: Green Engineering Brick
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeliquidsiron
-   Name: item.PipeLiquidsIron
-   Size: 11
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.rawrubberitem
-   Size: 1
-   MaxStack: 64
-   DamageValue: 3
-   RawName: tile.appeng.mb.medrive
-   Name: ME Drive
-   Size: 35
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.mushroom
-   Name: Mushroom
-   Size: 210
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.arrow
-   Name: Arrow
-   Size: 59
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipewaterproof
-   Name: item.pipeWaterproof
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.porkchopraw
-   Name: Raw Porkchop
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.lightgem
-   Name: Glowstone
-   Size: 17
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.item.diamondshard
-   Size: 1
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.inertstone
-   Name: Inert Stone
-   Size: 2
-   MaxStack: 64
-   DamageValue: 24
-   RawName: item.gt_materials.24
-   Name: Zinc Ingot
-   Size: 55
-   MaxStack: 64
-   DamageValue: 16
-   RawName: item.gt_dusts.16
-   Name: Uranium Dust
-   Size: 34
-   MaxStack: 64
-   DamageValue: 11
-   RawName: item.gt_dusts.11
-   Name: Cinnabar Dust
-   Size: 14
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemingotcopper
-   Name: Copper
-   Size: 54
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.rail
-   Name: Track
-   Size: 10
-   MaxStack: 64
-   DamageValue: 4
-   RawName: item.skull.creeper
-   Name: Creeper Head
-   Size: 1
-   MaxStack: 64
-   DamageValue: 1
-   RawName: machine.pulverizer
-   Name: Pulverizer
-   Size: 25
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.corncob
-   Name: Cob O'Corn
-   Size: 1
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.saddle
-   Name: Saddle
-   Size: 1
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.logic matrix programmer
-   Size: 3
-   MaxStack: 64
-   DamageValue: 1
-   RawName: cpw.gold
-   Name: Gold Chest
-   Size: 7
-   MaxStack: 64
-   DamageValue: 0
-   RawName: soaryn.aesthbluemultibrick
-   Name: Blue Engineering Brick
-   Size: 7
-   MaxStack: 64
-   DamageValue: 1
-   RawName: soaryn.aesthvalve
-   Name: Valve
-   Size: 42
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.apatite
-   Name: Apatite
-   Size: 7
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemingottin
-   Name: Tin
-   Size: 1
-   MaxStack: 64
-   DamageValue: 8
-   RawName: tile.appeng.mb.meinterface
-   Name: ME Interface
-   Size: 2232
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.ingotgold
-   Name: Gold Ingot
-   Size: 222
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.bone
-   Name: Bone
-   Size: 4
-   MaxStack: 64
-   DamageValue: 1
-   RawName: item.rplumar.orange
-   Name: Orange Lumar
-   Size: 8
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.beecombs
-   Name: Honey Comb
-   Size: 2
-   MaxStack: 64
-   DamageValue: 14
-   RawName: item.dyepowder.orange
-   Name: Orange Dye
-   Size: 3
-   MaxStack: 64
-   DamageValue: 7
-   RawName: tile.extrabiomes.flower.7
-   Name: Cala Lilies
-   Size: 5
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.extrabiomes.flower.0
-   Name: Autumn Shrub
-   Size: 2
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.extrabiomes.flower.1
-   Name: Hydrangea
-   Size: 11
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.mfrubberwood
-   Size: 5
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.tffeather
-   Name: Raven's Feather
-   Size: 1
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.appeng.mb.meexportbus
-   Name: ME Export Bus
-   Size: 6
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.torchberries
-   Name: Torchberries
-   Size: 134
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.paper
-   Name: Paper
-   Size: 1
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.liveroot
-   Name: Liveroot
-   Size: 3
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.steeleafingot
-   Name: Steeleaf
-   Size: 3
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.painting
-   Name: Painting
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.stonebricksmooth.default
-   Name: Stone Bricks
-   Size: 8
-   MaxStack: 64
-   DamageValue: 11
-   RawName: binnie.unknown
-   Name: Rocky Comb
-   Size: 1
-   MaxStack: 1
-   DamageValue: 0
-   RawName: factorization.pocket crafting table
-   Size: 1
-   MaxStack: 1
-   DamageValue: 5
-   RawName: item.scoop
-   Name: Scoop
-   Size: 1
-   MaxStack: 1
-   DamageValue: 18
-   RawName: item.shoveliron
-   Name: Iron Shovel
-   Size: 48
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeitemssandstone
-   Name: item.PipeItemsSandstone
-   RawName: item.beeprincessge
-   DamageValue: 0
-   IsAnalysed: false
-   Type: Prinsess
-   Name: Rockybees.princess.adj.add bees.princess
-   MaxStack: 1
-   Size: 3
-   RawName: item.beedronege
-   DamageValue: 0
-   IsAnalysed: false
-   Type: Drone
-   Name: Rockybees.drone.adj.add bees.drone
-   MaxStack: 64
-   Size: 59
-   Size: 12644
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.fertilizerbio
-   Name: Compost
-   Size: 16
-   MaxStack: 64
-   DamageValue: 4
-   RawName: appeng.wireless receiver
-   Name: Wireless Receiver
-   Size: 20
-   MaxStack: 64
-   DamageValue: 7
-   RawName: tile.appeng.mb.meassemblercontainmentwall
-   Name: ME Assembler Containment Wall
-   Size: 319
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.glass
-   Name: Glass
-   Size: 118
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.markerblock
-   Name: tile.markerBlock
-   Size: 66
-   MaxStack: 64
-   DamageValue: 0
-   RawName: powerarmorcomponent.componentwiring
-   Name: Wiring
-   Size: 1
-   MaxStack: 64
-   DamageValue: 0
-   RawName: ic2.blockbatbox
-   Name: BatBox
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: ic2.blockgenerator
-   Name: Generator
-   Size: 7
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.emerald
-   Name: Emerald
-   Size: 94
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeitemswood
-   Name: item.PipeItemsWood
-   Size: 1
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.tinkertable
-   Name: Power Armor Tinker Table
-   Size: 2
-   MaxStack: 64
-   DamageValue: 3
-   RawName: tile.extrabiomes.flower.3
-   Name: Purple Flower
-   Size: 3
-   MaxStack: 64
-   DamageValue: 1
-   RawName: item.dyepowder.red
-   Name: Rose Red
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: cpw.iron
-   Name: Iron Chest
-   Size: 331
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.kernel
-   Name: Corn Kernel
-   Size: 62
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.seedflax
-   Name: Flax Seeds
-   Size: 14
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.indigo
-   Name: Indigo Flower
-   Size: 3
-   MaxStack: 64
-   DamageValue: 2
-   RawName: tile.extrabiomes.flower.2
-   Name: Buttercups
-   Size: 113
-   MaxStack: 64
-   DamageValue: 15
-   RawName: item.dyepowder.white
-   Name: Bone Meal
-   Size: 1
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.tfsapling.1
-   Name: Canopy Tree Sapling
-   Size: 33
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.tflog.1
-   Name: Canopy Tree Wood
-   Size: 32
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.chickencooked
-   Name: Cooked Chicken
-   Size: 140
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.feather
-   Name: Feather
-   Size: 25
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.fence
-   Name: Fence
-   Size: 18
-   MaxStack: 64
-   DamageValue: 2
-   RawName: soaryn.aesthredmultibrick
-   Name: Red Engineering Brick
-   Size: 16
-   MaxStack: 64
-   DamageValue: 18
-   RawName: appeng.me basic processor
-   Name: ME Basic Processor
-   Size: 5
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.goldnugget
-   Name: Gold Nugget
-   Size: 114
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeliquidsstone
-   Name: item.PipeLiquidsStone
-   Size: 8
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.porkchopcooked
-   Name: Cooked Porkchop
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.tffirefly
-   Name: Firefly
-   Size: 4272
-   MaxStack: 64
-   DamageValue: 4
-   RawName: item.dyepowder.blue
-   Name: Lapis Lazuli
-   Size: 336
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.greenxychoridite
-   Name: Green Xychoridite
-   Size: 162
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.extrabiomes.log.0
-   Name: Fir Log
-   Size: 3
-   MaxStack: 64
-   DamageValue: 2
-   RawName: tile.stonebricksmooth.cracked
-   Name: Cracked Stone Bricks
-   Size: 519
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.stone
-   Name: Stone
-   Size: 91
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.stairsstone
-   Name: Stone Stairs
-   Size: 32
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.stonebricksmooth.mossy
-   Name: Mossy Stone Bricks
-   Size: 6
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.fencegate
-   Name: Fence Gate
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.trapdoor
-   Name: Trapdoor
-   Size: 7
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.ladder
-   Name: Ladder
-   Size: 758
-   MaxStack: 64
-   DamageValue: 4
-   RawName: tile.extrabiomes.sapling.4
-   Name: Fir Sapling
-   Size: 68
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.spidereye
-   Name: Spider Eye
-   Size: 100
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.flower
-   Name: Flower
-   Size: 11
-   MaxStack: 64
-   DamageValue: 3
-   RawName: item.dyepowder.brown
-   Name: Cocoa Beans
-   Size: 13
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.mushroom
-   Name: Mushroom
-   Size: 54
-   MaxStack: 64
-   DamageValue: 6
-   RawName: tile.extrabiomes.flower.6
-   Name: Toad Stool
-   Size: 77
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.reeds
-   Name: Sugar Canes
-   Size: 172
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.corn
-   Name: Corn
-   Size: 48
-   MaxStack: 64
-   DamageValue: 5
-   RawName: item.itemresource.5
-   Name: Zombie Brain
-   Size: 801
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.rottenflesh
-   Name: Rotten Flesh
-   Size: 20
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemfuelplantcmpr
-   Name: Compressed Plants
-   Size: 1019
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.string
-   Name: String
-   Size: 143
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.carrots
-   Name: Carrot
-   Size: 20
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.henequenleaf
-   Name: Henequen Leaf
-   Size: 21
-   MaxStack: 16
-   DamageValue: 0
-   RawName: item.sign
-   Name: Sign
-   Size: 8
-   MaxStack: 64
-   DamageValue: 2
-   RawName: advsolar.itemirradianturanium
-   Name: Irradiant Uranium
-   Size: 11
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeitemsobsidian
-   Name: item.PipeItemsObsidian
-   Size: 2
-   MaxStack: 64
-   DamageValue: 2
-   RawName: rc.machine.beta.tank.iron.valve
-   Name: Iron Tank Valve
-   Size: 20
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.stoneslab.stone
-   Name: Stone Slab
-   Size: 8
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.bedrock
-   Name: Bedrock
-   Size: 10
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.dyeindigo
-   Name: Indigo Dye
-   Size: 226
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.sandstone.default
-   Name: Sandstone
-   Size: 2
-   MaxStack: 16
-   DamageValue: 0
-   RawName: item.itembatre
-   Name: RE-Battery
-   Size: 59
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.extrabiomes.woodslab.fir
-   Name: Fir Wood Slab
-   Size: 76433
-   MaxStack: 64
-   DamageValue: 129
-   RawName: item.material.sawdust
-   Name: Sawdust
-   Size: 441
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.stick
-   Name: Stick
-   RawName: item.beeprincessge
-   DamageValue: 0
-   IsAnalysed: false
-   Type: Prinsess
-   Name: Rockybees.princess.adj.add bees.princess
-   MaxStack: 1
-   Size: 16
-   Size: 4
-   MaxStack: 64
-   DamageValue: 15
-   RawName: item.gt_smalldusts.15
-   Name: Tiny Pile of Wood Pulp
-   Size: 1
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipepowerwood
-   Name: item.PipePowerWood
-   Size: 1
-   MaxStack: 64
-   DamageValue: 19
-   RawName: appeng.me advanced processor
-   Name: ME Advanced Processor
-   Size: 20
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.notgate
-   Name: Redstone Torch
-   Size: 1
-   MaxStack: 64
-   DamageValue: 8
-   RawName: machine.watergen
-   Name: Aqueous Accumulator
-   Size: 64
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.fenceiron
-   Name: Iron Bars
-   RawName: item.beeprincessge
-   DamageValue: 0
-   IsAnalysed: false
-   Type: Prinsess
-   Name: Waterbees.princess.adj.add bees.princess
-   MaxStack: 1
-   Size: 1
-   RawName: item.beedronege
-   DamageValue: 0
-   IsAnalysed: false
-   Type: Drone
-   Name: Waterbees.drone.adj.add bees.drone
-   MaxStack: 64
-   Size: 1
-   Size: 116
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemingotbronze
-   Name: Bronze
-   Size: 108
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.canempty
-   Name: Can
-   Size: 7
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipepowergold
-   Name: item.PipePowerGold
-   Size: 215
-   MaxStack: 64
-   DamageValue: 4103
-   RawName: tile.rppanel.glass
-   Name: Glass Panel
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.pressureplate
-   Name: Pressure Plate
-   Size: 1
-   MaxStack: 64
-   DamageValue: 16
-   RawName: appeng.me blank pattern
-   Name: ME Blank Pattern
-   Size: 10
-   MaxStack: 64
-   DamageValue: 4096
-   RawName: conduit.liquid
-   Name: Liquiduct
-   RawName: item.beeprincessge
-   DamageValue: 0
-   IsAnalysed: false
-   Type: Prinsess
-   Name: Rockybees.princess.adj.add bees.princess
-   MaxStack: 1
-   Size: 2
-   Size: 1
-   MaxStack: 64
-   DamageValue: 21
-   RawName: tile.ccturtle
-   Name: Felling Turtle
-   Size: 9
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.canjuice
-   Name: Juice Can
-   RawName: item.beeprincessge
-   DamageValue: 0
-   IsAnalysed: false
-   Type: Prinsess
-   Name: Rockybees.princess.adj.add bees.princess
-   MaxStack: 1
-   Size: 50
-   RawName: item.beeprincessge
-   DamageValue: 0
-   IsAnalysed: false
-   Type: Prinsess
-   Name: bees.species.valiantbees.princess.adj.add bees.princess
-   MaxStack: 1
-   Size: 3
-   Size: 4
-   MaxStack: 64
-   DamageValue: 13
-   RawName: tile.appeng.mb.mecable
-   Name: ME Cable
-   Size: 1
-   MaxStack: 1
-   DamageValue: 211
-   RawName: item.handsawsapphire
-   Name: Sapphire Handsaw
-   Size: 8
-   MaxStack: 64
-   DamageValue: 9
-   RawName: tile.appeng.mb.mestoragebus
-   Name: ME Storage Bus
-   Size: 1
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.stairswoodspruce
-   Name: Spruce Wood Stairs
-   Size: 31
-   MaxStack: 16
-   DamageValue: 0
-   RawName: item.enderpearl
-   Name: Ender Pearl
-   Size: 1
-   MaxStack: 1
-   DamageValue: 500
-   RawName: item.miniumstone
-   Name: Minium Stone
-   Size: 1
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.swordiron
-   Name: Iron Sword
-   Size: 1
-   MaxStack: 1
-   DamageValue: 1
-   RawName: item.magicmap
-   Name: Magic Map #1
-   Size: 49
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.yellowdust
-   Name: Glowstone Dust
-   Size: 58
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itemcellempty
-   Name: Empty Cell
-   Size: 4
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeitemsvoid
-   Name: item.PipeItemsVoid
-   Size: 1
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.swordruby
-   Name: Ruby Sword
-   Size: 1
-   MaxStack: 1
-   DamageValue: 338
-   RawName: item.bow
-   Name: Bow
-   Size: 2
-   MaxStack: 1
-   DamageValue: 359
-   RawName: item.bow
-   Name: Bow
-   Size: 3
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.world.items.popcorn
-   Name: Popcorn
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.itempartcircuitadv
-   Name: Advanced Circuit
-   Size: 2
-   MaxStack: 64
-   DamageValue: 1
-   RawName: rc.part.plate.steel
-   Name: Steel Plate
-   Size: 8
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.blockscaffold
-   Name: Scaffold
-   Size: 1
-   MaxStack: 64
-   DamageValue: 241
-   RawName: item.gt_dusts.241
-   Name: Iron Dust
-   Size: 44
-   MaxStack: 64
-   DamageValue: 28
-   RawName: item.gt_dusts.28
-   Name: Nickel Dust
-   Size: 24
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.blockalloyglass
-   Name: Reinforced Glass
-   Size: 16
-   MaxStack: 64
-   DamageValue: 29
-   RawName: item.gt_materials.29
-   Name: Invar Ingot
-   Size: 42
-   MaxStack: 64
-   DamageValue: 4
-   RawName: ic2.itemgoldcableii
-   Name: 2xIns. Gold Cable
-   Size: 61
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipestructurecobblestone
-   Name: item.PipeStructureCobblestone
-   Size: 2
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.blockcustomore.0
-   Name: Cinnabar Ore
-   Size: 23
-   MaxStack: 64
-   DamageValue: 5
-   RawName: soaryn.xychaluminumore
-   Name: Aluminum Ore
-   Size: 17
-   MaxStack: 64
-   DamageValue: 0
-   RawName: ore.copper
-   Name: Copper Ore
-   Size: 20
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeliquidsgold
-   Name: item.PipeLiquidsGold
-   Size: 1
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.pumpblock
-   Name: tile.pumpBlock
-   Size: 4
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeliquidsvoid
-   Name: item.PipeLiquidsVoid
-   Size: 4
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.dyepowder.black
-   Name: Ink Sac
-   Size: 1
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.mffsmonazitore
-   Name: Monazit Ore
-   Size: 9
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.oreiron
-   Name: Iron Ore
-   Size: 1
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.pipeliquidswood
-   Name: item.PipeLiquidsWood
-   RawName: item.beeprincessge
-   DamageValue: 0
-   IsAnalysed: false
-   Type: Prinsess
-   Name: Rockybees.princess.adj.add bees.princess
-   MaxStack: 1
-   Size: 2
-   Size: 1
-   MaxStack: 1
-   DamageValue: 1
-   RawName: item.itemarmorjetpackelectric
-   Name: Electric Jetpack
-   Size: 1
-   MaxStack: 1
-   DamageValue: 32
-   RawName: item.hatchetiron
-   Name: Iron Axe
-   Size: 45
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.log.spruce
-   Name: Spruce Wood
-   Size: 3
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.extrabiomes.sapling.1
-   Name: Orange Autumn Sapling
-   Size: 10
-   MaxStack: 64
-   DamageValue: 1
-   RawName: tile.wood.spruce
-   Name: Spruce Wood Planks
-   Size: 2
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.rc.armor.steel.legs
-   Name: Steel Leggings
-   Size: 70
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.extrabiomes.crackedsand
-   Name: Cracked Sand
-   Size: 27
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.extrabiomes.quicksand
-   Name: Quicksand
-   Size: 1
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.itemarmorbronzehelmet
-   Name: Bronze Helmet
-   Size: 1
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.itemarmorbronzelegs
-   Name: Bronze Leggings
-   Size: 5
-   MaxStack: 64
-   DamageValue: 3
-   RawName: tile.extrabiomes.sapling.3
-   Name: Yellow Autumn Sapling
-   Size: 3
-   MaxStack: 64
-   DamageValue: 2
-   RawName: tile.extrabiomes.sapling.2
-   Name: Purple Autumn Sapling
-   Size: 2687
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.mulch
-   Name: Mulch
-   Size: 1
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.pipette
-   Name: Pipette
-   Size: 82
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.apple
-   Name: Apple
-   Size: 1514617
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.stonebrick
-   Name: Cobblestone
-   Size: 53734
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.sapling.oak
-   Name: Oak Sapling
-   Size: 242628
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.log.oak
-   Name: Oak Wood
-   Size: 18914
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.redstone
-   Name: Redstone
-   Size: 54824
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.gravel
-   Name: Gravel
-   Size: 215007
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.dirt
-   Name: Dirt
-   Size: 1133
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.blazerod
-   Name: Blaze Rod
-   Size: 56283
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.sand
-   Name: Sand
-   Size: 21436
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.obsidian
-   Name: Obsidian
-   Size: 1368
-   MaxStack: 64
-   DamageValue: 0
-   RawName: tile.hellrock
-   Name: Netherrack
-   Size: 0
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.hatchetiron
-   Name: Iron Axe
-   Size: 0
-   MaxStack: 64
-   DamageValue: 0
-   RawName: item.bread
-   Name: Bread
-   Size: 0
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.pickaxeiron
-   Name: Iron Pickaxe
-   Size: 0
-   MaxStack: 1
-   DamageValue: 0
-   RawName: item.shoveliron
-   Name: Iron Shovel
- Powered: true
- UsedBytes: 89427
- FreeBytes: 300717
-  Y: 2
-  X: -1
-  Z: -2
- RawName: tile.appeng.mb.mewirelessaccesspoint
- UsedCount: 2627411
-----------
+ sensors: 
+  1: 
+   name: openccsensors.item.appliedenergisticssensor
+   data: 
+    ME Wireless Access Point: 
+     UsedTypes: 432
+     FreeTypes: 1500
+     FreeCount: -1918471
+     Name: ME Wireless Access Point
+     Items: 
+      1: 
+       Size: 13
+       MaxStack: 64
+       DamageValue: 4
+       RawName: item.skull.creeper
+       Name: Creeper Head
+      2: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 1
+       RawName: machine.pulverizer
+       Name: Pulverizer
+      3: 
+       Size: 25
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.corncob
+       Name: Cob O'Corn
+      4: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.saddle
+       Name: Saddle
+      5: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 1
+       RawName: cpw.gold
+       Name: Gold Chest
+      6: 
+       Size: 7
+       MaxStack: 64
+       DamageValue: 0
+       RawName: soaryn.aesthbluemultibrick
+       Name: Blue Engineering Brick
+      7: 
+       Size: 2891
+       MaxStack: 64
+       DamageValue: 7
+       RawName: appeng.quartz dust
+       Name: Quartz Dust
+      8: 
+       Size: 1239
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.apatite
+       Name: Apatite
+      9: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 3
+       RawName: tile.extrabiomes.flower.3
+       Name: Purple Flower
+      10: 
+       Size: 5154
+       MaxStack: 64
+       DamageValue: 2
+       RawName: item.sapphire
+       Name: Sapphire
+      11: 
+       Size: 3119
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.ruby
+       Name: Ruby
+      12: 
+       Size: 2893
+       MaxStack: 64
+       DamageValue: 2
+       RawName: item.itemshard.2
+       Name: Water Shard
+      13: 
+       Size: 4
+       MaxStack: 64
+       DamageValue: 1
+       RawName: item.rplumar.orange
+       Name: Orange Lumar
+      14: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.beecombs
+       Name: Honey Comb
+      15: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 7
+       RawName: tile.extrabiomes.flower.7
+       Name: Cala Lilies
+      16: 
+       Size: 5
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.extrabiomes.flower.0
+       Name: Autumn Shrub
+      17: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.extrabiomes.flower.1
+       Name: Hydrangea
+      18: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.tffeather
+       Name: Raven's Feather
+      19: 
+       Size: 22
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.torchberries
+       Name: Torchberries
+      20: 
+       Size: 93
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.liveroot
+       Name: Liveroot
+      21: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.steeleafingot
+       Name: Steeleaf
+      22: 
+       Size: 207
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.book
+       Name: Book
+      23: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.stonebricksmooth.default
+       Name: Stone Bricks
+      24: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 11
+       RawName: binnie.unknown
+       Name: Rocky Comb
+      25: 
+       Size: 48
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeitemssandstone
+       Name: item.PipeItemsSandstone
+      26: 
+       Size: 3186
+       MaxStack: 64
+       DamageValue: 6
+       RawName: item.itemresource.6
+       Name: Amber
+      27: 
+       Size: 16
+       MaxStack: 64
+       DamageValue: 4
+       RawName: appeng.wireless receiver
+       Name: Wireless Receiver
+      28: 
+       Size: 20
+       MaxStack: 64
+       DamageValue: 7
+       RawName: tile.appeng.mb.meassemblercontainmentwall
+       Name: ME Assembler Containment Wall
+      29: 
+       Size: 205
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.glass
+       Name: Glass
+      30: 
+       Size: 2595
+       MaxStack: 64
+       DamageValue: 6
+       RawName: appeng.quartz crystal
+       Name: Quartz Crystal
+      31: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: ic2.blockbatbox
+       Name: BatBox
+      32: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: ic2.blockgenerator
+       Name: Generator
+      33: 
+       Size: 305
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.torch
+       Name: Torch
+      34: 
+       Size: 348
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.yellowdust
+       Name: Glowstone Dust
+      35: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: factorization.pocket crafting table
+      36: 
+       Size: 94
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeitemswood
+       Name: item.PipeItemsWood
+      37: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.tinkertable
+       Name: Power Armor Tinker Table
+      38: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: cpw.iron
+       Name: Iron Chest
+      39: 
+       Size: 76
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.seedflax
+       Name: Flax Seeds
+      40: 
+       Size: 31
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.indigo
+       Name: Indigo Flower
+      41: 
+       Size: 4
+       MaxStack: 64
+       DamageValue: 2
+       RawName: tile.extrabiomes.flower.2
+       Name: Buttercups
+      42: 
+       Size: 113
+       MaxStack: 64
+       DamageValue: 15
+       RawName: item.dyepowder.white
+       Name: Bone Meal
+      43: 
+       Size: 311
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.tflog.1
+       Name: Canopy Tree Wood
+      44: 
+       Size: 93
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.feather
+       Name: Feather
+      45: 
+       Size: 20
+       MaxStack: 64
+       DamageValue: 2
+       RawName: soaryn.aesthredmultibrick
+       Name: Red Engineering Brick
+      46: 
+       Size: 114
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeliquidsstone
+       Name: item.PipeLiquidsStone
+      47: 
+       Size: 7
+       MaxStack: 1
+       DamageValue: 1
+       RawName: item.gravigun
+       Name: Gravity Gun
+      48: 
+       Size: 261
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.fence
+       Name: Fence
+      49: 
+       Size: 17
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.porkchopcooked
+       Name: Cooked Porkchop
+      50: 
+       Size: 336
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.greenxychoridite
+       Name: Green Xychoridite
+      51: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 2
+       RawName: tile.stonebricksmooth.cracked
+       Name: Cracked Stone Bricks
+      52: 
+       Size: 91
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.stairsstone
+       Name: Stone Stairs
+      53: 
+       Size: 32
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.stonebricksmooth.mossy
+       Name: Mossy Stone Bricks
+      54: 
+       Size: 6
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.fencegate
+       Name: Fence Gate
+      55: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.trapdoor
+       Name: Trapdoor
+      56: 
+       Size: 6
+       MaxStack: 64
+       DamageValue: 1
+       RawName: soaryn.aesthvalve
+       Name: Valve
+      57: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 42
+       RawName: item.cleaning tube
+       Name: Cleaning Tube
+      58: 
+       Size: 115599
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.log.oak
+       Name: Oak Wood
+      59: 
+       Size: 2287
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.rc.fuel.coke
+       Name: Coal Coke
+      60: 
+       Size: 27
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.ladder
+       Name: Ladder
+      61: 
+       Size: 1471
+       MaxStack: 64
+       DamageValue: 4
+       RawName: tile.extrabiomes.sapling.4
+       Name: Fir Sapling
+      62: 
+       Size: 60
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.spidereye
+       Name: Spider Eye
+      63: 
+       Size: 101
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.flower
+       Name: Flower
+      64: 
+       Size: 54
+       MaxStack: 64
+       DamageValue: 6
+       RawName: tile.extrabiomes.flower.6
+       Name: Toad Stool
+      65: 
+       Size: 20
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.reeds
+       Name: Sugar Canes
+      66: 
+       Size: 172
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.corn
+       Name: Corn
+      67: 
+       Size: 919
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.rottenflesh
+       Name: Rotten Flesh
+      68: 
+       Size: 20
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemfuelplantcmpr
+       Name: Compressed Plants
+      69: 
+       Size: 20
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.henequenleaf
+       Name: Henequen Leaf
+      70: 
+       Size: 20
+       MaxStack: 16
+       DamageValue: 0
+       RawName: item.sign
+       Name: Sign
+      71: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 2
+       RawName: advsolar.itemirradianturanium
+       Name: Irradiant Uranium
+      72: 
+       Size: 11
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeitemsobsidian
+       Name: item.PipeItemsObsidian
+      73: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 2
+       RawName: rc.machine.beta.tank.iron.valve
+       Name: Iron Tank Valve
+      74: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.bedrock
+       Name: Bedrock
+      75: 
+       Size: 10
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.dyeindigo
+       Name: Indigo Dye
+      76: 
+       Size: 6449
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.sandstone.default
+       Name: Sandstone
+      77: 
+       Size: 3533
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.stick
+       Name: Stick
+      78: 
+       Size: 56
+       MaxStack: 64
+       DamageValue: 15
+       RawName: item.gt_smalldusts.15
+       Name: Tiny Pile of Wood Pulp
+      79: 
+       Size: 5597
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.extrabiomes.log.quarter.1
+       Name: Fir Log
+      80: 
+       Size: 9
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.canjuice
+       Name: Juice Can
+      81: 
+       Size: 172
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.canempty
+       Name: Can
+      82: 
+       Size: 91
+       MaxStack: 64
+       DamageValue: 4103
+       RawName: tile.rppanel.glass
+       Name: Glass Panel
+      83: 
+       Size: 108
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemingotbronze
+       Name: Bronze
+      84: 
+       Size: 7
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipepowergold
+       Name: item.PipePowerGold
+      85: 
+       Size: 57
+       MaxStack: 64
+       DamageValue: 2
+       RawName: item.skull.zombie
+       Name: Zombie Head
+      86: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipepowerwood
+       Name: item.PipePowerWood
+      87: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 19
+       RawName: appeng.me advanced processor
+       Name: ME Advanced Processor
+      88: 
+       Size: 3578
+       MaxStack: 64
+       DamageValue: 44
+       RawName: item.gt_dusts.44
+       Name: Galena Dust
+      89: 
+       Size: 1510
+       MaxStack: 64
+       DamageValue: 22
+       RawName: item.gt_dusts.22
+       Name: Tungsten Dust
+      90: 
+       Size: 2890
+       MaxStack: 64
+       DamageValue: 28
+       RawName: item.gt_materials.28
+       Name: Nickel Ingot
+      91: 
+       Size: 941
+       MaxStack: 64
+       DamageValue: 1
+       RawName: item.itemshard.1
+       Name: Fire Shard
+      92: 
+       Size: 1157
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemshard.0
+       Name: Air Shard
+      93: 
+       Size: 2083
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemoreuran
+       Name: Uranium Ore
+      94: 
+       Size: 1119
+       MaxStack: 64
+       DamageValue: 4
+       RawName: item.itemshard.4
+       Name: Vis Shard
+      95: 
+       Size: 1212
+       MaxStack: 64
+       DamageValue: 3
+       RawName: item.itemshard.3
+       Name: Earth Shard
+      96: 
+       Size: 40
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemoreiridium
+       Name: Iridium Ore
+      97: 
+       Size: 2
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.irongoldupgrade
+       Name: Iron to Gold Chest Upgrade
+      98: 
+       Size: 2
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.woodironupgrade
+       Name: Normal chest to Iron Chest Upgrade
+      99: 
+       Size: 76
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeitemsiron
+       Name: item.PipeItemsIron
+      100: 
+       Size: 15088
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.extrabiomes.redrock.1
+       Name: Red Cobblestone
+      101: 
+       Size: 183
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.stonemoss
+       Name: Moss Stone
+      102: 
+       Size: 36
+       MaxStack: 64
+       DamageValue: 0
+       RawName: rc.part.plate.iron
+       Name: Iron Plate
+      103: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.netherstar
+       Name: Nether Star
+      104: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 14
+       RawName: appeng.quartz fiber
+       Name: Quartz Fiber
+      105: 
+       Size: 10
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.blockfenceiron
+       Name: Iron Fence
+      106: 
+       Size: 6
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.bootsiron
+       Name: Iron Boots
+      107: 
+       Size: 18
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.chest
+       Name: Chest
+      108: 
+       Size: 970
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.diamond
+       Name: Diamond
+      109: 
+       Size: 153
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.henequenseeds
+       Name: Henequen Seeds
+      110: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 240
+       RawName: item.gt_dusts.240
+       Name: Coal Dust
+      111: 
+       Size: 6
+       MaxStack: 64
+       DamageValue: 64
+       RawName: item.facade
+       Name: item.Facade: 
+      112: 
+       Size: 9
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.tankblock
+       Name: tile.tankBlock
+      113: 
+       Size: 157
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.miniumshard
+       Name: Shard of Minium
+      114: 
+       Size: 106
+       MaxStack: 64
+       DamageValue: 243
+       RawName: item.gt_dusts.243
+       Name: Copper Dust
+      115: 
+       Size: 10
+       MaxStack: 64
+       DamageValue: 15
+       RawName: tile.cloth.black
+       Name: Black Wool
+      116: 
+       Size: 39
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.netherbrick
+       Name: Nether Brick
+      117: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 0
+       RawName: rc.machine.beta.tank.iron.wall
+       Name: Iron Tank Wall
+      118: 
+       Size: 6
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeliquidscobblestone
+       Name: item.PipeLiquidsCobblestone
+      119: 
+       Size: 96
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemrubber
+       Name: Rubber
+      120: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 55
+       RawName: item.gt_materials.55
+       Name: Yellow Garnet
+      121: 
+       Size: 92
+       MaxStack: 64
+       DamageValue: 3
+       RawName: item.gt_dusts.3
+       Name: Pyrite Dust
+      122: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 12
+       RawName: rc.machine.alpha.blast.furnace
+       Name: Blast Furnace Brick
+      123: 
+       Size: 160
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeitemscobblestone
+       Name: item.PipeItemsCobblestone
+      124: 
+       Size: 127
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeitemsstone
+       Name: item.PipeItemsStone
+      125: 
+       Size: 282
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.slimeball
+       Name: Slimeball
+      126: 
+       Size: 1
+       MaxStack: 16
+       DamageValue: 0
+       RawName: item.extra-dimensional storage
+      127: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.extrabiomes.stairs.redcobble
+       Name: Red Cobblestone Stairs
+      128: 
+       Size: 50
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeitemsdiamond
+       Name: item.PipeItemsDiamond
+      129: 
+       Size: 609
+       MaxStack: 64
+       DamageValue: 21
+       RawName: item.gt_materials.21
+       Name: Electrum Ingot
+      130: 
+       Size: 60
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.rawplasticitem
+      131: 
+       Size: 40
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.brick
+       Name: Brick
+      132: 
+       Size: 887
+       MaxStack: 16
+       DamageValue: 0
+       RawName: item.egg
+       Name: Egg
+      133: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 4
+       RawName: ic2.itemgoldcableii
+       Name: 2xIns. Gold Cable
+      134: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 1
+       RawName: ic2.blockmfe
+       Name: MFE
+      135: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 143
+       RawName: item.itemtoolwrench
+       Name: Wrench
+      136: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 2
+       RawName: ic2.blockmfsu
+       Name: MFSU
+      137: 
+       Size: 72
+       MaxStack: 64
+       DamageValue: 2
+       RawName: tile.sapling.birch
+       Name: Birch Sapling
+      138: 
+       Size: 66
+       MaxStack: 64
+       DamageValue: 30
+       RawName: item.chest pane
+       Name: Chest Pane
+      139: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.cloth.white
+       Name: Wool
+      140: 
+       Size: 190
+       MaxStack: 64
+       DamageValue: 5
+       RawName: item.factoryblock5
+      141: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 1
+       RawName: soaryn.aesthgreenmultibrick
+       Name: Green Engineering Brick
+      142: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeliquidsiron
+       Name: item.PipeLiquidsIron
+      143: 
+       Size: 146
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.rawrubberitem
+      144: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 3
+       RawName: tile.appeng.mb.medrive
+       Name: ME Drive
+      145: 
+       Size: 52
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.mushroom
+       Name: Mushroom
+      146: 
+       Size: 189
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.arrow
+       Name: Arrow
+      147: 
+       Size: 59
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipewaterproof
+       Name: item.pipeWaterproof
+      148: 
+       Size: 5
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.porkchopraw
+       Name: Raw Porkchop
+      149: 
+       Size: 18652
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.apple
+       Name: Apple
+      150: 
+       Size: 17
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.item.diamondshard
+      151: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 24
+       RawName: item.gt_materials.24
+       Name: Zinc Ingot
+      152: 
+       Size: 55
+       MaxStack: 64
+       DamageValue: 16
+       RawName: item.gt_dusts.16
+       Name: Uranium Dust
+      153: 
+       Size: 27
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemingotcopper
+       Name: Copper
+      154: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itempartcarbonplate
+       Name: Carbon Plate
+      155: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itempartalloy
+       Name: Advanced Alloy
+      156: 
+       Size: 34
+       MaxStack: 64
+       DamageValue: 11
+       RawName: item.gt_dusts.11
+       Name: Cinnabar Dust
+      157: 
+       RawName: item.beeprincessge
+       DamageValue: 0
+       IsAnalysed: false
+       Type: Prinsess
+       Name: Rockybees.princess.adj.add bees.princess
+       MaxStack: 1
+       Size: 2
+      158: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 211
+       RawName: item.handsawsapphire
+       Name: Sapphire Handsaw
+      159: 
+       Size: 2852
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.rc.part.ingot.steel
+       Name: Steel Ingot
+      160: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.stairswoodspruce
+       Name: Spruce Wood Stairs
+      161: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.swordiron
+       Name: Iron Sword
+      162: 
+       Size: 4
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeitemsvoid
+       Name: item.PipeItemsVoid
+      163: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.swordruby
+       Name: Ruby Sword
+      164: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 338
+       RawName: item.bow
+       Name: Bow
+      165: 
+       Size: 2
+       MaxStack: 1
+       DamageValue: 359
+       RawName: item.bow
+       Name: Bow
+      166: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.popcorn
+       Name: Popcorn
+      167: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.blockscaffold
+       Name: Scaffold
+      168: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 241
+       RawName: item.gt_dusts.241
+       Name: Iron Dust
+      169: 
+       Size: 44
+       MaxStack: 64
+       DamageValue: 28
+       RawName: item.gt_dusts.28
+       Name: Nickel Dust
+      170: 
+       Size: 24
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.blockalloyglass
+       Name: Reinforced Glass
+      171: 
+       Size: 16
+       MaxStack: 64
+       DamageValue: 29
+       RawName: item.gt_materials.29
+       Name: Invar Ingot
+      172: 
+       Size: 61
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipestructurecobblestone
+       Name: item.PipeStructureCobblestone
+      173: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.pumpblock
+       Name: tile.pumpBlock
+      174: 
+       Size: 4
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeliquidsvoid
+       Name: item.PipeLiquidsVoid
+      175: 
+       Size: 6
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.dyepowder.black
+       Name: Ink Sac
+      176: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.lightgem
+       Name: Glowstone
+      177: 
+       Size: 6
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.blocklapis
+       Name: Lapis Lazuli Block
+      178: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 5
+       RawName: item.scoop
+       Name: Scoop
+      179: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 1
+       RawName: item.itemarmorjetpackelectric
+       Name: Electric Jetpack
+      180: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.enginestone
+       Name: tile.engineStone
+      181: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipegateautarchic.0
+       Name: item.pipeGateAutarchic.0
+      182: 
+       Size: 20
+       MaxStack: 16
+       DamageValue: 0
+       RawName: item.bucket
+       Name: Bucket
+      183: 
+       Size: 58
+       MaxStack: 64
+       DamageValue: 14
+       RawName: powerarmorcomponent.componentcontrolcircuit
+       Name: Control Circuit
+      184: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 1
+       RawName: powerarmorcomponent.componentsolenoid
+       Name: Solenoid
+      185: 
+       Size: 39
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.thinglass
+       Name: Glass Pane
+      186: 
+       Size: 70
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.extrabiomes.crackedsand
+       Name: Cracked Sand
+      187: 
+       Size: 27
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.extrabiomes.quicksand
+       Name: Quicksand
+      188: 
+       Size: 71
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.sapling
+      189: 
+       Size: 2687
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.mulch
+       Name: Mulch
+      190: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.pipette
+       Name: Pipette
+      191: 
+       Size: 11
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.rpcover.cobble
+       Name: Cobblestone Cover
+      192: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.pressureplate
+       Name: Pressure Plate
+      193: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.nagascale
+       Name: Naga Scale
+      194: 
+       Size: 13
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.emerald
+       Name: Emerald
+      195: 
+       Size: 28
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.goldnugget
+       Name: Gold Nugget
+      196: 
+       Size: 10
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.shoveliron
+       Name: Iron Shovel
+      197: 
+       Size: 1025
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.string
+       Name: String
+      198: 
+       Size: 292
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.bone
+       Name: Bone
+      199: 
+       Size: 5
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.painting
+       Name: Painting
+      200: 
+       Size: 11
+       MaxStack: 64
+       DamageValue: 12
+       RawName: tile.cloth.brown
+       Name: Brown Wool
+      201: 
+       Size: 415
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.kernel
+       Name: Corn Kernel
+      202: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.venisoncooked
+       Name: Venison Steak
+      203: 
+       Size: 164
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.carrots
+       Name: Carrot
+      204: 
+       Size: 21
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.mushroom
+       Name: Mushroom
+      205: 
+       Size: 4
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.potatobaked
+       Name: Baked Potato
+      206: 
+       Size: 18
+       MaxStack: 16
+       DamageValue: 0
+       RawName: item.enderpearl
+       Name: Ender Pearl
+      207: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.sceptertwilight
+       Name: Scepter of Twilight
+      208: 
+       Size: 2
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.oremagnet
+       Name: Ore Magnet
+      209: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.ironwoodingot
+       Name: Ironwood Ingot
+      210: 
+       Size: 177
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.hellsand
+       Name: Soul Sand
+      211: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.ghasttear
+       Name: Ghast Tear
+      212: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 1
+       RawName: item.magicmap
+       Name: Magic Map #1
+      213: 
+       Size: 124
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.tfsapling.0
+       Name: Sickly Twilight Oak Sapling
+      214: 
+       Size: 29
+       MaxStack: 64
+       DamageValue: 18
+       RawName: appeng.me basic processor
+       Name: ME Basic Processor
+      215: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: powercrystals.rcconsumer
+       Name: Steam Consumer
+      216: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: powercrystals.energybridge
+       Name: Energy Bridge
+      217: 
+       Size: 20
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeliquidsgold
+       Name: item.PipeLiquidsGold
+      218: 
+       Size: 27
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.viledust
+       Name: Vile Dust
+      219: 
+       Size: 31
+       MaxStack: 64
+       DamageValue: 24
+       RawName: item.gt_dusts.24
+       Name: Zinc Dust
+      220: 
+       Size: 156
+       MaxStack: 64
+       DamageValue: 14
+       RawName: item.gt_dusts.14
+       Name: Sphalerite Dust
+      221: 
+       Size: 113
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.sulphur
+       Name: Gunpowder
+      222: 
+       Size: 4
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.impregnatedcasing
+       Name: Impregnated Casing
+      223: 
+       Size: 247
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.paper
+       Name: Paper
+      224: 
+       Size: 27
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.beefcooked
+       Name: Steak
+      225: 
+       Size: 51
+       MaxStack: 64
+       DamageValue: 5
+       RawName: item.itemresource.5
+       Name: Zombie Brain
+      226: 
+       Size: 148
+       MaxStack: 16
+       DamageValue: 0
+       RawName: item.snowball
+       Name: Snowball
+      227: 
+       Size: 24
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.skull.skeleton
+       Name: Skeleton Skull
+      228: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 2
+       RawName: item.itemarmorhazmatleggings
+       Name: Hazmat Suit Leggings
+      229: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 2
+       RawName: item.itemarmorhazmatchestplate
+       Name: Hazmat Suit
+      230: 
+       Size: 18
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.tffirefly
+       Name: Firefly
+      231: 
+       Size: 22
+       MaxStack: 64
+       DamageValue: 8
+       RawName: tile.tfplant.8
+       Name: Fiddlehead
+      232: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.record
+       Name: Music Disc
+      233: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.record
+       Name: Music Disc
+      234: 
+       Size: 14
+       MaxStack: 64
+       DamageValue: 3
+       RawName: item.dyepowder.brown
+       Name: Cocoa Beans
+      235: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.record
+       Name: Music Disc
+      236: 
+       Size: 18
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemingottin
+       Name: Tin
+      237: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 2
+       RawName: item.dyepowder.green
+       Name: Cactus Green
+      238: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 2
+       RawName: item.itemarmorjetpackelectric
+       Name: Electric Jetpack
+      239: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 1
+       RawName: item.itemarmorjetpackelectric
+       Name: Electric Jetpack
+      240: 
+       Size: 43
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.tfsapling.1
+       Name: Canopy Tree Sapling
+      241: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.mushroomstew
+       Name: Mushroom Stew
+      242: 
+       Size: 59
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.chickencooked
+       Name: Cooked Chicken
+      243: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.fishcooked
+       Name: Cooked Fish
+      244: 
+       Size: 1208
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.tflog.0
+       Name: Twilight Oak Wood
+      245: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.charmofkeeping1
+       Name: Charm of Keeping I
+      246: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.flowerpot
+       Name: Flower Pot
+      247: 
+       Size: 130
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.markerblock
+       Name: tile.markerBlock
+      248: 
+       Size: 810
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.extrabiomes.log.0
+       Name: Fir Log
+      249: 
+       Size: 153
+       MaxStack: 64
+       DamageValue: 13
+       RawName: appeng.silicon
+       Name: Silicon
+      250: 
+       Size: 32
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.plasticsheetitem
+      251: 
+       Size: 7
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.frame
+       Name: Item Frame
+      252: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 596
+       RawName: item.miniumstone
+       Name: Minium Stone
+      253: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.miniumstone
+       Name: Minium Stone
+      254: 
+       Size: 293
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.blazepowder
+       Name: Blaze Powder
+      255: 
+       Size: 680
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.stone
+       Name: Stone
+      256: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.eyeofender
+       Name: Eye of Ender
+      257: 
+       Size: 5
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.pumpkin
+       Name: Pumpkin
+      258: 
+       Size: 7
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.glassbottle
+       Name: Glass Bottle
+      259: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.myst.lectern
+       Name: Lectern
+      260: 
+       Size: 2028
+       MaxStack: 64
+       DamageValue: 3
+       RawName: tile.basaltcobble
+       Name: Basalt Cobblestone
+      261: 
+       Size: 2
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.doorwood
+       Name: Wooden Door
+      262: 
+       Size: 12
+       MaxStack: 64
+       DamageValue: 5
+       RawName: advsolar.itemirradiantglasspane
+       Name: Irradiant Glass Pane
+      263: 
+       Size: 6
+       MaxStack: 64
+       DamageValue: 244
+       RawName: item.gt_dusts.244
+       Name: Tin Dust
+      264: 
+       Size: 44
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.potato
+       Name: Potato
+      265: 
+       Size: 6
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.stairswood
+       Name: Oak Wood Stairs
+      266: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.basalt
+       Name: Basalt
+      267: 
+       Size: 16
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.pipeitemsgold
+       Name: item.PipeItemsGold
+      268: 
+       Size: 57
+       MaxStack: 64
+       DamageValue: 2
+       RawName: powerarmorcomponent.componentservo
+       Name: Servo Motor
+      269: 
+       Size: 32
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.autoworkbenchblock
+       Name: tile.autoWorkbenchBlock
+      270: 
+       Size: 164
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemingotadviron
+       Name: Refined Iron
+      271: 
+       Size: 192
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemcellempty
+       Name: Empty Cell
+      272: 
+       Size: 96
+       MaxStack: 64
+       DamageValue: 0
+       RawName: rc.part.rail.standard
+       Name: Standard Rail
+      273: 
+       Size: 20
+       MaxStack: 64
+       DamageValue: 34
+       RawName: item.iron pane
+       Name: Iron Pane
+      274: 
+       Size: 156
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.bluexychoridite
+       Name: Blue Xychoridite
+      275: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.blockcrop
+       Name: Crop
+      276: 
+       Size: 4
+       MaxStack: 64
+       DamageValue: 9
+       RawName: item.itemresource.9
+       Name: Knowledge Fragment
+      277: 
+       Size: 10
+       MaxStack: 64
+       DamageValue: 131
+       RawName: item.material.slag
+       Name: Slag
+      278: 
+       Size: 5
+       MaxStack: 64
+       DamageValue: 2
+       RawName: tile.engine.2
+       Name: Electrical Engine
+      279: 
+       Size: 176
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.redxychoridite
+       Name: Red Xychoridite
+      280: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 7
+       RawName: tile.cloth.gray
+       Name: Gray Wool
+      281: 
+       Size: 48715
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.seeds
+       Name: Seeds
+      282: 
+       Size: 5
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.gearbronze
+       Name: Bronze Gear
+      283: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 9
+       RawName: tile.appeng.mb.mestoragebus
+       Name: ME Storage Bus
+      284: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.emptymap
+       Name: Empty Map
+      285: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.itemaxethaumium
+       Name: Thaumium Axe
+      286: 
+       Size: 5
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.seeds_melon
+       Name: Melon Seeds
+      287: 
+       Size: 4
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.logic matrix programmer
+      288: 
+       Size: 5
+       MaxStack: 64
+       DamageValue: 2
+       RawName: item.itemresource.2
+       Name: Thaumium Ingot
+      289: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.applegold
+       Name: Golden Apple
+      290: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 213
+       RawName: item.pickaxeiron
+       Name: Iron Pickaxe
+      291: 
+       RawName: item.beequeenge
+       DamageValue: 0
+       IsAnalysed: false
+       Type: Queen
+       Name: Rockybees.queen.adj.add bees.queen
+       MaxStack: 1
+       Size: 1
+      292: 
+       Size: 4
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.rubberbaritem
+      293: 
+       Size: 5
+       MaxStack: 64
+       DamageValue: 1
+       RawName: ic2.itemcableo
+       Name: Uninsulated Copper Cable
+      294: 
+       Size: 7
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.blockrubsapling
+       Name: Rubber Tree Sapling
+      295: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemharz
+       Name: Sticky Resin
+      296: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 323
+       RawName: item.bow
+       Name: Bow
+      297: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 163
+       RawName: item.material.powercoilelectrum
+       Name: Redstone Conductance Coil
+      298: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 2
+       RawName: teleport.item
+       Name: Item Tesseract
+      299: 
+       Size: 4
+       MaxStack: 64
+       DamageValue: 129
+       RawName: item.component.teleportbase
+       Name: Unattuned Tesseract
+      300: 
+       Size: 78
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.fireball
+       Name: Fire Charge
+      301: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.record
+       Name: Music Disc
+      302: 
+       Size: 3
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.rose
+       Name: Rose
+      303: 
+       Size: 2
+       MaxStack: 1
+       DamageValue: 18
+       RawName: item.quartz cutting knife
+       Name: Quartz Cutting Knife
+      304: 
+       Size: 2
+       MaxStack: 1
+       DamageValue: 19
+       RawName: item.quartz cutting knife
+       Name: Quartz Cutting Knife
+      305: 
+       Size: 1
+       MaxStack: 16
+       DamageValue: 0
+       RawName: item.itembatre
+       Name: RE-Battery
+      306: 
+       Size: 104
+       MaxStack: 64
+       DamageValue: 18
+       RawName: item.gt_dusts.18
+       Name: Aluminium Dust
+      307: 
+       RawName: item.beedronege
+       DamageValue: 0
+       IsAnalysed: false
+       Type: Drone
+       Name: Rockybees.drone.adj.add bees.drone
+       MaxStack: 64
+       Size: 54
+      308: 
+       RawName: item.beeprincessge
+       DamageValue: 0
+       IsAnalysed: false
+       Type: Prinsess
+       Name: Rockybees.princess.adj.add bees.princess
+       MaxStack: 1
+       Size: 2
+      309: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.leather
+       Name: Leather
+      310: 
+       RawName: item.beeprincessge
+       DamageValue: 0
+       IsAnalysed: false
+       Type: Prinsess
+       Name: Waterbees.princess.adj.add bees.princess
+       MaxStack: 1
+       Size: 1
+      311: 
+       Size: 7
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.tfcicada
+       Name: Cicada
+      312: 
+       Size: 192
+       MaxStack: 64
+       DamageValue: 2
+       RawName: tile.log.birch
+       Name: Birch Wood
+      313: 
+       Size: 113
+       MaxStack: 64
+       DamageValue: 2
+       RawName: tile.tflog.2
+       Name: Mangrove Wood
+      314: 
+       Size: 6
+       MaxStack: 64
+       DamageValue: 2
+       RawName: tile.tfsapling.2
+       Name: Twilight Mangrove Sapling
+      315: 
+       Size: 12
+       MaxStack: 64
+       DamageValue: 3
+       RawName: tile.log.jungle
+       Name: Jungle Wood
+      316: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 2
+       RawName: tile.woodslab.birch
+       Name: Birch Wood Slab
+      317: 
+       Size: 216
+       MaxStack: 64
+       DamageValue: 0
+       RawName: glass.hardened
+       Name: Hardened Glass
+      318: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.lever
+       Name: Lever
+      319: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 10
+       RawName: tile.ccturtle
+       Name: Mining Turtle
+      320: 
+       Size: 27
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.enginewood
+       Name: tile.engineWood
+      321: 
+       Size: 128
+       MaxStack: 64
+       DamageValue: 21
+       RawName: item.gt_dusts.21
+       Name: Electrum Dust
+      322: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 82
+       RawName: item.hatchetiron
+       Name: Iron Axe
+      323: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: powerarmorcomponent.componentwiring
+       Name: Wiring
+      324: 
+       Size: 15
+       MaxStack: 64
+       DamageValue: 4
+       RawName: rc.machine.beta.boiler.tank.pressure.high
+       Name: High Pressure Boiler
+      325: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: codechicken.chickenchunkloader
+       Name: Chunk Loader
+      326: 
+       Size: 5
+       MaxStack: 64
+       DamageValue: 4096
+       RawName: conduit.liquid
+       Name: Liquiduct
+      327: 
+       Size: 1
+       MaxStack: 3
+       DamageValue: 0
+       RawName: item.rc.item.cart.basic
+       Name: Minecart
+      328: 
+       Size: 844
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.wood.oak
+       Name: Oak Wood Planks
+      329: 
+       Size: 26
+       MaxStack: 64
+       DamageValue: 19
+       RawName: item.gt_smalldusts.19
+       Name: Tiny Pile of Titanium Dust
+      330: 
+       Size: 65
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.gt_cells.0
+       Name: Hydrogen Cell
+      331: 
+       Size: 39
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemcellair
+       Name: Compressed Air Cell
+      332: 
+       Size: 18
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemingotalloy
+       Name: Mixed Metal Ingot
+      333: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.workbench
+       Name: Crafting Table
+      334: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.beefraw
+       Name: Raw Beef
+      335: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 16
+       RawName: appeng.me blank pattern
+       Name: ME Blank Pattern
+      336: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 16
+       RawName: item.advanced pcb
+       Name: Advanced PCB
+      337: 
+       Size: 6
+       MaxStack: 64
+       DamageValue: 33
+       RawName: item.chest lock
+       Name: Chest Lock
+      338: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 2
+       RawName: sc2.module.2
+       Name: Side Chests
+      339: 
+       Size: 48
+       MaxStack: 64
+       DamageValue: 9
+       RawName: item.simple pcb
+       Name: Simple PCB
+      340: 
+       Size: 13
+       MaxStack: 64
+       DamageValue: 35
+       RawName: item.large iron pane
+       Name: Large Iron Pane
+      341: 
+       Size: 45
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.rail
+       Name: Track
+      342: 
+       Size: 22
+       MaxStack: 64
+       DamageValue: 0
+       RawName: conduit.energy
+       Name: Redstone Energy Conduit
+      343: 
+       RawName: item.beedronege
+       DamageValue: 0
+       IsAnalysed: false
+       Type: Drone
+       Name: Waterbees.drone.adj.add bees.drone
+       MaxStack: 64
+       Size: 1
+      344: 
+       RawName: item.beeprincessge
+       DamageValue: 0
+       IsAnalysed: false
+       Type: Prinsess
+       Name: Rockybees.princess.adj.add bees.princess
+       MaxStack: 1
+       Size: 4
+      345: 
+       Size: 4424
+       MaxStack: 64
+       DamageValue: 17
+       RawName: item.gt_dusts.17
+       Name: Bauxite Dust
+      346: 
+       RawName: item.beeprincessge
+       DamageValue: 0
+       IsAnalysed: false
+       Type: Prinsess
+       Name: Rockybees.princess.adj.add bees.princess
+       MaxStack: 1
+       Size: 54
+      347: 
+       RawName: item.beedronege
+       DamageValue: 0
+       IsAnalysed: false
+       Type: Drone
+       Name: bees.species.valiantbees.drone.adj.add bees.drone
+       MaxStack: 64
+       Size: 1
+      348: 
+       RawName: item.beeprincessge
+       DamageValue: 0
+       IsAnalysed: false
+       Type: Prinsess
+       Name: bees.species.valiantbees.princess.adj.add bees.princess
+       MaxStack: 1
+       Size: 1
+      349: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 8
+       RawName: tile.cloth.silver
+       Name: Light Gray Wool
+      350: 
+       Size: 20
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.stoneslab.stone
+       Name: Stone Slab
+      351: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.blockadvdetector
+       Name: Advanced detector rail
+      352: 
+       Size: 11
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.extrabiomes.woodslab.fir
+       Name: Fir Wood Slab
+      353: 
+       Size: 4
+       MaxStack: 64
+       DamageValue: 54
+       RawName: item.gt_materials.54
+       Name: Red Garnet
+      354: 
+       Size: 4
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.bucketwater
+       Name: Water Bucket
+      355: 
+       Size: 9
+       MaxStack: 64
+       DamageValue: 4
+       RawName: tile.appeng.mb.melevelemitter
+       Name: ME Level Emitter
+      356: 
+       Size: 1
+       MaxStack: 64
+       DamageValue: 22
+       RawName: item.gt_components.22
+       Name: Machine Parts
+      357: 
+       Size: 16
+       MaxStack: 64
+       DamageValue: 9
+       RawName: ic2.itemglasscable
+       Name: Glass Fibre Cable
+      358: 
+       Size: 2
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.appeng.mb.meexportbus
+       Name: ME Export Bus
+      359: 
+       Size: 44
+       MaxStack: 64
+       DamageValue: 13
+       RawName: tile.appeng.mb.mecable
+       Name: ME Cable
+      360: 
+       Size: 22
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.diode
+       Name: Redstone Repeater
+      361: 
+       Size: 1
+       MaxStack: 1
+       DamageValue: 66
+       RawName: item.shoveliron
+       Name: Iron Shovel
+      362: 
+       Size: 8
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.bread
+       Name: Bread
+      363: 
+       Size: 38
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.log.spruce
+       Name: Spruce Wood
+      364: 
+       Size: 7
+       MaxStack: 64
+       DamageValue: 2
+       RawName: machine.sawmill
+       Name: Sawmill
+      365: 
+       Size: 72
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.blockmagicallog.greatwood
+       Name: Greatwood Log
+      366: 
+       Size: 75
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.mfrubberwood
+      367: 
+       Size: 12501
+       MaxStack: 64
+       DamageValue: 23
+       RawName: item.gt_materials.23
+       Name: Lead Ingot
+      368: 
+       Size: 29827
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemforcicium
+       Name: Forcicium
+      369: 
+       Size: 23985
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.lightxychorium
+       Name: Light Xychorium
+      370: 
+       Size: 11514
+       MaxStack: 64
+       DamageValue: 5
+       RawName: item.ingotcopper
+       Name: Copper Ingot
+      371: 
+       Size: 69765
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itemscrap
+       Name: Scrap
+      372: 
+       Size: 7940
+       MaxStack: 64
+       DamageValue: 4
+       RawName: item.dyepowder.blue
+       Name: Lapis Lazuli
+      373: 
+       Size: 21937
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.darkxychorium
+       Name: Dark Xychorium
+      374: 
+       Size: 4605
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.ingotgold
+       Name: Gold Ingot
+      375: 
+       Size: 115249
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.sand
+       Name: Sand
+      376: 
+       Size: 22844
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.aluminum
+       Name: Aluminum
+      377: 
+       Size: 23328
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.redxychorium
+       Name: Red Xychorium
+      378: 
+       Size: 40747
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.ingotiron
+       Name: Iron Ingot
+      379: 
+       Size: 41791
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.obsidian
+       Name: Obsidian
+      380: 
+       Size: 4515
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.fertilizerbio
+       Name: Compost
+      381: 
+       Size: 13406
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.clay
+       Name: Clay
+      382: 
+       Size: 23332
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.greenxychorium
+       Name: Green Xychorium
+      383: 
+       Size: 11392
+       MaxStack: 64
+       DamageValue: 3
+       RawName: item.ingotsilver
+       Name: Silver Ingot
+      384: 
+       Size: 50843
+       MaxStack: 64
+       DamageValue: 6
+       RawName: item.nikolite
+       Name: Nikolite
+      385: 
+       Size: 68614
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.wheat
+       Name: Wheat
+      386: 
+       Size: 13342
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.flint
+       Name: Flint
+      387: 
+       Size: 22578
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.world.items.bluexychorium
+       Name: Blue Xychorium
+      388: 
+       Size: 20863
+       MaxStack: 64
+       DamageValue: 4
+       RawName: item.ingottin
+       Name: Tin Ingot
+      389: 
+       Size: 81221
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.marble
+       Name: Marble
+      390: 
+       Size: 4558
+       MaxStack: 64
+       DamageValue: 3
+       RawName: item.itemresource.3
+       Name: Quicksilver
+      391: 
+       Size: 13148
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.coal
+       Name: Coal
+      392: 
+       Size: 28602
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.world.blocks.worldgen.quartzcrystal
+       Name: Quartz Crystal
+      393: 
+       Size: 1607
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.hellrock
+       Name: Netherrack
+      394: 
+       Size: 3290
+       MaxStack: 64
+       DamageValue: 1
+       RawName: item.greensapphire
+       Name: Green Sapphire
+      395: 
+       Size: 1038
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.blazerod
+       Name: Blaze Rod
+      396: 
+       Size: 3165747
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.stonebrick
+       Name: Cobblestone
+      397: 
+       Size: 480931
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.dirt
+       Name: Dirt
+      398: 
+       Size: 121232
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.gravel
+       Name: Gravel
+      399: 
+       Size: 56509
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.sapling.oak
+       Name: Oak Sapling
+      400: 
+       Size: 40241
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.redstone
+       Name: Redstone
+      401: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: ic2.itemcable
+       Name: Copper Cable
+      402: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itempartcircuitadv
+       Name: Advanced Circuit
+      403: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.notgate
+       Name: Redstone Torch
+      404: 
+       Size: 0
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.hatchetiron
+       Name: Iron Axe
+      405: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.woodengearitem
+       Name: item.woodenGearItem
+      406: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.stonegearitem
+       Name: item.stoneGearItem
+      407: 
+       Size: 0
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.pickaxeiron
+       Name: Iron Pickaxe
+      408: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.pistonbase
+       Name: Piston
+      409: 
+       Size: 0
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.quartz cutting knife
+       Name: Quartz Cutting Knife
+      410: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 20
+       RawName: appeng.basic processor assembly
+       Name: Basic Processor Assembly
+      411: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 1
+       RawName: appeng.storage cell
+       Name: Storage Cell
+      412: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: appeng.conversion matrix
+       Name: Conversion Matrix
+      413: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 8
+       RawName: tile.appeng.mb.meinterface
+       Name: ME Interface
+      414: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.pistonstickybase
+       Name: Sticky Piston
+      415: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 1
+       RawName: tile.appeng.mb.meimportbus
+       Name: ME Import Bus
+      416: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.factorymachineblock
+      417: 
+       Size: 0
+       MaxStack: 1
+       DamageValue: 0
+       RawName: item.inertstone
+       Name: Inert Stone
+      418: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 3
+       RawName: powercrystals.factorydeepstorageunit
+      419: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.irongearitem
+       Name: item.ironGearItem
+      420: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.goldgearitem
+       Name: item.goldGearItem
+      421: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 32
+       RawName: item.component.machineframe
+       Name: Machine Frame
+      422: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 160
+       RawName: item.material.pneumaticservo
+       Name: Pneumatic Servo
+      423: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 8
+       RawName: machine.watergen
+       Name: Aqueous Accumulator
+      424: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 5
+       RawName: rc.machine.beta.boiler.firebox.solid
+       Name: Solid Fueled Firebox
+      425: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 6
+       RawName: rc.machine.beta.boiler.firebox.liquid
+       Name: Liquid Fueled Firebox
+      426: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: tile.furnace
+       Name: Furnace
+      427: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 96
+       RawName: item.component.energyconduit
+       Name: Energy Conduit (Empty)
+      428: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 8
+       RawName: rc.machine.beta.engine.steam.low
+       Name: Commercial Steam Engine
+      429: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: ic2.blockmachine
+       Name: Machine Block
+      430: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 4
+       RawName: ic2.blocktransformermv
+       Name: MV-Transformer
+      431: 
+       Size: 0
+       MaxStack: 1
+       DamageValue: 26
+       RawName: item.itembatcrystal
+       Name: Energy Crystal
+      432: 
+       Size: 0
+       MaxStack: 64
+       DamageValue: 0
+       RawName: item.itempartcircuit
+       Name: Electronic Circuit
+     Powered: true
+     UsedBytes: 48320
+     FreeBytes: 341824
+     Position: 
+      Y: 2
+      X: -1
+      Z: -2
+     RawName: tile.appeng.mb.mewirelessaccesspoint
+     UsedCount: 4938915
+    error: no data

@@ -9,10 +9,11 @@ if arg[1] == 'debug' then
   debugFile = io.open("sensorDebug.txt", "w")
 end
 
-local snsr, modem, targets
+local modem, targets
+local attachedSensors = {}
 local MODEM_CHANNEL = 3
 
---os.loadAPI("serialize")
+os.loadAPI("serialize")
 
 -- check sides for modem and sensor and initialize them
 function initPeripherals()
@@ -24,7 +25,7 @@ function initPeripherals()
       print("Loaded Modem from " .. v)
     elseif pType == "sensor" then
       os.loadAPI("ocs/apis/sensor")
-      snsr = sensor.wrap(v)
+      attachedSensors[v] = sensor.wrap(v)
       print("Loaded Sensor from " .. v)
     end
   end
@@ -45,42 +46,33 @@ function initTargets()
 end
 
 
-function getSensorData()
+function getTargetData(sensr)
   local ret = {}
-  
-  -- ensure a sensor is present
-  if snsr then
-    ret['sensor'] = snsr.getSensorName()
-  else
-    ret['error'] = 'no sensor'
-    return ret
-  end
-
   -- look for sensor targets
-  local snsrTargs = snsr.getTargets()
-  if targets then
+  local snsrTargs = sensr.getTargets()
+  if snsrTargs then
     -- loop through targets on the sensor
     for position, details in pairs(snsrTargs) do
       -- only use targets with names
       if details["Name"] ~= "" then
         -- if we've specified a list of targets
-        if #targets then
+        if targets and #targets then
           -- only add targets in list
           for i, v in ipairs(targets) do
             if v == details["Name"] then
               -- add sensor data
-              ret['data'][details["Name"]] = snsr.getTargetDetails(position)
+              ret[details["Name"]] = sensr.getTargetDetails(position)
               break
             end
           end
         else
           -- add any sensor data
-          ret['data'][details["Name"]] = snsr.getTargetDetails(position)
+          ret[details["Name"]] = sensr.getTargetDetails(position)
         end
       end
     end
   else
-    ret['error'] = 'no targets'
+    ret['error'] = 'no targets for sensor ' .. ret['sensor']
     return ret
   end
   if not ret['data'] then
@@ -89,31 +81,45 @@ function getSensorData()
   return ret
 end
 
+
+function getSensorData()
+  local ret = {}
+  local sensorIndex = 0
+  -- ensure a sensor is present
+  if #attachedSensors then
+    ret['sensors'] = {}
+    for side, sensr in pairs(attachedSensors) do
+      sensorIndex = sensorIndex + 1
+      ret['sensors'][sensorIndex] = {
+        name = sensr.getSensorName(),
+        data = getTargetData(sensr)
+      }
+    end
+  else
+    ret['error'] = 'no sensor'
+  end
+  return ret
+end
+
 -- recursively print key/value from a table
 -- write to the debug file if in debug mode
 function dumpTable(table, depth)
-  isDebug = true
   if type(table) ~= "table" then 
     print(table)
   end
   if not depth then depth = 0 end
   for k, v in pairs(table) do
-    print(k)
     if type(v) ~= 'table' then
       if v ~= "" then
         v = tostring(v)
-        for i = 0, depth, 1 do
-          io.write(" ")
-          if isDebug then
-            debugFile:write(" ")
-          end
-        end
+        pad(depth)
         print(k .. ": " .. v)
         if isDebug then
           debugFile:write(k .. ": " .. v .. "\n")
         end
       end
     else
+      pad(depth)
       print(k .. ": ")
       if isDebug then
         debugFile:write(k .. ": \n")
@@ -123,12 +129,23 @@ function dumpTable(table, depth)
   end
 end
 
+-- write some spaces
+-- if debugging, write to the debug file
+function pad(depth)
+  for i = 0, depth, 1 do
+    io.write(" ")
+    if isDebug then
+      debugFile:write(" ")
+    end
+  end
+end
+
 -- send data through the modem
--- return true if data nd no errors
-function sendData(data)
-  if data['data'] then
+-- return true if data and no errors
+function sendData(data, channel)
+  if #data['sensors'] then
     local serialData = serialize.serialize(data)
-    modem.transmit(p3, 0, serialData)
+    modem.transmit(channel, 0, serialData)
     if isDebug then
       dumpTable(data)
       print(data)
@@ -155,6 +172,7 @@ if not isDebug then
       and p4 == "getSensorData"
     then
       data = getSensorData()
+      sendData(data, p3)
     elseif event == "char" and p1 == "x" then
       break
     end 
@@ -162,7 +180,8 @@ if not isDebug then
 else
   -- debugging - get data and quit
   print("Debugging sensor data...")
-  sendData(getSensorData())
+  data = getSensorData()
+  dumpTable(data)
   debugFile:close()
 end
 
